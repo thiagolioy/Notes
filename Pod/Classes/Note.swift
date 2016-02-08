@@ -40,4 +40,7 @@ public extension Note{
     public func next() -> Note{
         return ChromaticScale.next(ofNote: self)
     }
+    public func previous() -> Note{
+        return ChromaticScale.previous(ofNote: self)
+    }
 }

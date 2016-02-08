@@ -51,6 +51,13 @@ public struct ChromaticScale{
         let result = condition ? notes.first : notes[index]
         return result!
     }
+    
+    public static func previous(ofNote note:Note) -> Note{
+        var index:Int = self.index(forNote: note)!
+        index--
+        let result = index < 0 ? notes.last : notes[index]
+        return result!
+    }
 }
 
 public struct Scale {
