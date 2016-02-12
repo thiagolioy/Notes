@@ -14,10 +14,22 @@ extension ScaleSpec{
     func compareScaleNotes(expected:[Note],actual:[Note]){
         for (i,n) in actual.enumerate(){
             let other = expected[i]
-            if(n != other){
+            let areTheSame = n == other || n == other.eharmonicEquivalent()
+            if(!areTheSame){
                 print("Note: \(n.fullname()) is not equal to : \(other.fullname())")
             }
-            expect(n) == other
+            expect(areTheSame).to(beTruthy())
+        }
+    }
+    
+    func compareChordTones(expected:[Note],actual:[Note]){
+        for (i,n) in actual.enumerate(){
+            let other = expected[i]
+            let areTheSame = n == other || n == other.eharmonicEquivalent()
+            if(!areTheSame){
+                print("Note: \(n.fullname()) is not equal to : \(other.fullname())")
+            }
+            expect(areTheSame).to(beTruthy())
         }
     }
 }
@@ -90,16 +102,18 @@ class ScaleSpec: QuickSpec {
             }
             
             describe("chordTones") {
+                let expectedChordTones = [
+                    Note(name: .C, intonation: .Natural),
+                    Note(name: .E, intonation: .Flat),
+                    Note(name: .G, intonation: .Natural),
+                    Note(name: .B, intonation: .Flat)
+                ]
+                
                 it("should be of kind") {
                     expect(scale.chordKind()) == ChordKind.Minor7
                 }
                 it("should have expected chordTones") {
-                    expect(scale.chordTones()) == [
-                        Note(name: .C, intonation: .Natural),
-                        Note(name: .E, intonation: .Flat),
-                        Note(name: .G, intonation: .Natural),
-                        Note(name: .B, intonation: .Flat)
-                    ]
+                    self.compareChordTones(expectedChordTones, actual: scale.chordTones())
                 }
             }
         }
