@@ -56,7 +56,11 @@ public enum ScaleKind{
         var result:[Note] = [key]
         for i:NoteInterval in self.intervals(){
             let lastNote = result.last!
-            result.append(lastNote.add(i))
+            var noteToAdd = lastNote.add(i)
+            if noteToAdd.intonation == .Sharp{
+                noteToAdd = noteToAdd.eharmonicEquivalent()!
+            }
+            result.append(noteToAdd)
         }
         return result
     }
@@ -90,16 +94,12 @@ public extension Scale{
     
     public func majorPentatonic() -> [Note]{
         var ns:[Note] = ScaleKind.Ionian.notes(inKey: self.key)
-        ns.removeAtIndex(3)
-        ns.removeAtIndex(6)
-        return ns
+        return [ns[0],ns[1],ns[2],ns[4],ns[5],ns[7]]
     }
     
     public func minorPentatonic() -> [Note]{
         var ns:[Note] = ScaleKind.Aeolian.notes(inKey: self.key)
-        ns.removeAtIndex(1)
-        ns.removeAtIndex(5)
-        return ns
+        return [ns[0],ns[2],ns[3],ns[4],ns[6],ns[7]]
     }
     
 }

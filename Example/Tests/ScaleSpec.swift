@@ -14,7 +14,7 @@ extension ScaleSpec{
     func compareScaleNotes(expected:[Note],actual:[Note]){
         for (i,n) in actual.enumerate(){
             let other = expected[i]
-            let areTheSame = n == other || n == other.eharmonicEquivalent()
+            let areTheSame = n.equalOrEqvl(toNote: other)
             if(!areTheSame){
                 print("Scale Note: \(n.fullname()) is not equal to : \(other.fullname())")
             }
@@ -25,7 +25,7 @@ extension ScaleSpec{
     func compareChordTones(expected:[Note],actual:[Note]){
         for (i,n) in actual.enumerate(){
             let other = expected[i]
-            let areTheSame = n == other || n == other.eharmonicEquivalent()
+            let areTheSame = n.equalOrEqvl(toNote: other)
             if(!areTheSame){
                 print("Chord Tone Note: \(n.fullname()) is not equal to : \(other.fullname())")
             }
@@ -36,6 +36,17 @@ extension ScaleSpec{
 
 class ScaleSpec: QuickSpec {
     override func spec() {
+        
+        describe("default init"){
+            let scale = Scale()
+            
+            it("should have default  key ") {
+                expect(scale.key) == Note(name: .C, intonation: .Natural)
+            }
+            it("should have default scale kind ") {
+                expect(scale.kind) == ScaleKind.Ionian
+            }
+        }
         
         describe("Ionian Mode") {
             let expectedNotes = [
@@ -327,6 +338,42 @@ class ScaleSpec: QuickSpec {
                     self.compareChordTones(expectedChordTones, actual: scale.chordTones())
                 }
             }
+        }
+        
+        describe("minorPentatonic") {
+            let expectedNotes = [
+                Note(name: .C, intonation: .Natural),
+                Note(name: .E, intonation: .Flat),
+                Note(name: .F, intonation: .Natural),
+                Note(name: .G, intonation: .Natural),
+                Note(name: .B, intonation: .Flat),
+                Note(name: .C, intonation: .Natural)
+            ]
+            
+            let scale = Scale()
+            
+            it("should have expected notes") {
+                self.compareScaleNotes(expectedNotes, actual: scale.minorPentatonic())
+            }
+        
+        }
+        
+        describe("majorPentatonic") {
+            let expectedNotes = [
+                Note(name: .C, intonation: .Natural),
+                Note(name: .D, intonation: .Natural),
+                Note(name: .E, intonation: .Natural),
+                Note(name: .G, intonation: .Natural),
+                Note(name: .A, intonation: .Natural),
+                Note(name: .C, intonation: .Natural)
+            ]
+            
+            let scale = Scale()
+            
+            it("should have expected notes") {
+                self.compareScaleNotes(expectedNotes, actual: scale.majorPentatonic())
+            }
+            
         }
     }
 }

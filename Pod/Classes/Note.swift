@@ -63,6 +63,12 @@ public func ==(lhs: Note, rhs: Note) -> Bool{
 }
 
 public extension Note{
+    public func equalOrEqvl(toNote note:Note) -> Bool{
+        return self == note ||
+            (self.hasEharmonicEquivalent() &&
+                self.eharmonicEquivalent()! == note)
+    }
+    
     public  func add(interval:NoteInterval) -> Note{
         return ChromaticScale.add(interval, toNote: self)
     }

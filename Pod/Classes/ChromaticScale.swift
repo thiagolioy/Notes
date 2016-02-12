@@ -35,7 +35,9 @@ public struct ChromaticScale{
     
     public static func index(forNote note:Note) -> Int?{
         for (i,n) in notes.enumerate(){
-            if n == note { return i }
+            if n.equalOrEqvl(toNote: note) {
+                return i
+            }
         }
         return nil
     }
