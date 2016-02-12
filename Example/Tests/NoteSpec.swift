@@ -284,7 +284,70 @@ class NoteSpec: QuickSpec {
                 
 
             }
-                
+            
+            
+            describe("eharmonicEquivalent") {
+                it("C# should be equivalent to Db") {
+                    let note:Note = Note(name:.C,intonation: .Sharp)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.D
+                    expect(eqv!.intonation) == NoteIntonation.Flat
+                }
+                it("Db should be equivalent to C#") {
+                    let note:Note = Note(name:.D,intonation: .Flat)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.C
+                    expect(eqv!.intonation) == NoteIntonation.Sharp
+                }
+                it("D# should be equivalent to Eb") {
+                    let note:Note = Note(name:.D,intonation: .Sharp)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.E
+                    expect(eqv!.intonation) == NoteIntonation.Flat
+                }
+                it("Eb should be equivalent to D#") {
+                    let note:Note = Note(name:.E,intonation: .Flat)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.D
+                    expect(eqv!.intonation) == NoteIntonation.Sharp
+                }
+                it("F# should be equivalent to Gb") {
+                    let note:Note = Note(name:.F,intonation: .Sharp)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.G
+                    expect(eqv!.intonation) == NoteIntonation.Flat
+                }
+                it("Gb should be equivalent to F#") {
+                    let note:Note = Note(name:.G,intonation: .Flat)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.F
+                    expect(eqv!.intonation) == NoteIntonation.Sharp
+                }
+                it("G# should be equivalent to Ab") {
+                    let note:Note = Note(name:.G,intonation: .Sharp)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.A
+                    expect(eqv!.intonation) == NoteIntonation.Flat
+                }
+                it("Ab should be equivalent to G#") {
+                    let note:Note = Note(name:.A,intonation: .Flat)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.G
+                    expect(eqv!.intonation) == NoteIntonation.Sharp
+                }
+                it("A# should be equivalent to Bb") {
+                    let note:Note = Note(name:.A,intonation: .Sharp)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.B
+                    expect(eqv!.intonation) == NoteIntonation.Flat
+                }
+                it("Bb should be equivalent to A#") {
+                    let note:Note = Note(name:.B,intonation: .Flat)
+                    let eqv = note.eharmonicEquivalent()
+                    expect(eqv!.name) == NoteName.A
+                    expect(eqv!.intonation) == NoteIntonation.Sharp
+                }
+            }
             
         }
     }
