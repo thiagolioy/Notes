@@ -63,6 +63,14 @@ public func ==(lhs: Note, rhs: Note) -> Bool{
 }
 
 public extension Note{
+
+    public func harmonyNames(kind:DiatonicHarmony) -> [String]{
+        return kind.harmony(inKey: self).map{$0.chordName()}
+    }
+    public func harmony(kind:DiatonicHarmony) -> [Scale]{
+        return kind.harmony(inKey: self)
+    }
+    
     public func equalOrEqvl(toNote note:Note) -> Bool{
         return self == note ||
             (self.hasEharmonicEquivalent() &&

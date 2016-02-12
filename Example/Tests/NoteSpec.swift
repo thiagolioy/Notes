@@ -12,6 +12,37 @@ import notes
 
 class NoteSpec: QuickSpec {
     override func spec() {
+        describe("DiatonicHarmony"){
+            it("should be able to create an major diatonic harmony for key") {
+                let note:Note = Note(name:.C,intonation: .Natural)
+                let expected = [
+                    "CMajor7",
+                    "DMinor7",
+                    "EMinor7",
+                    "FMajor7",
+                    "Gdom7",
+                    "AMinor7",
+                    "BMinor7♭5",
+                ]
+                let actual = note.harmonyNames(.Major)
+                expect(actual) == expected
+            }
+            it("should be able to create an minor diatonic harmony for key") {
+                let note:Note = Note(name:.C,intonation: .Natural)
+                let expected = [
+                    "CMinor7",
+                    "DMinor7♭5",
+                    "E♭Major7",
+                    "FMinor7",
+                    "GMinor7",
+                    "A♭Major7",
+                    "B♭Major7",
+                ]
+                let actual = note.harmonyNames(.Minor)
+                expect(actual) == expected
+            }
+        }
+        
         describe("should be able to return the next note of current instance") {
             it("next of C should be C#") {
                 let note:Note = Note(name:.C,intonation: .Natural)

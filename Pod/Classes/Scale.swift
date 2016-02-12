@@ -8,8 +8,52 @@
 
 import Foundation
 
+public enum DiatonicHarmony:String{
+    case Major,Minor
+    
+    private func naturalScale(inKey key:Note) -> Scale{
+        if self == .Major{
+            return Scale(kind: .Ionian, key: key)
+        }
+        return Scale(kind: .Aeolian, key: key)
+    }
+    
+    private func scaleKinds() -> [ScaleKind]{
+        if self == .Major{
+            return [.Ionian,.Aeolian,.Aeolian,.Ionian,.Mixolydian,.Aeolian,.Locrian,]
+        }
+        return [.Aeolian,.Locrian,.Ionian,.Aeolian,.Aeolian,.Ionian,.Ionian]
+    }
+    
+    func harmony(inKey key:Note) -> [Scale]{
+        let naturalScale = self.naturalScale(inKey: key)
+        let kinds:[ScaleKind] = self.scaleKinds()
+        var result:[Scale] = []
+        for (i,n) in naturalScale.notes().enumerate(){
+            if(i > kinds.count-1){break}
+            result.append(Scale(kind: kinds[i], key: n))
+        }
+        return result
+    }
+    
+}
+
+
 public enum ChordKind:String{
     case Major7,dom7,Minor7,Minor7b5 = "Minor7♭5"
+    
+    func naturalScale() -> ScaleKind{
+        switch self{
+        case ChordKind.Major7:
+            return .Ionian
+        case ChordKind.Minor7:
+            return .Aeolian
+        case ChordKind.dom7:
+            return .Mixolydian
+        case ChordKind.Minor7b5:
+            return .Locrian
+        }
+    }
 }
 
 public enum ScaleKind{
@@ -78,6 +122,10 @@ public struct Scale {
 }
 
 public extension Scale{
+    
+    public func chordName() -> String{
+        return self.key.fullname() + self.kind.chordKind().rawValue
+    }
     public func chordKind() -> ChordKind{
         return self.kind.chordKind()
     }
