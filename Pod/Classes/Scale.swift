@@ -8,67 +8,98 @@
 
 import Foundation
 
+public enum ChordKind:String{
+    case Major7,dom7,Minor7,Minor7b5 = "Minor7♭5"
+}
+
 public enum ScaleKind{
-    case Chromatic
-}
-
-
-public struct ChromaticScale{
-    static let notes:[Note] = ChromaticScale.createNotes()
-    static let intervals:[NoteInterval] = ChromaticScale.createIntervals()
-
-    private static func createNotes() -> [Note]{
-        return [
-            Note(name: .C, intonation: .Natural),
-            Note(name: .C, intonation: .Sharp),
-            Note(name: .D, intonation: .Natural),
-            Note(name: .D, intonation: .Sharp),
-            Note(name: .E, intonation: .Natural),
-            Note(name: .F, intonation: .Natural),
-            Note(name: .F, intonation: .Sharp),
-            Note(name: .G, intonation: .Natural),
-            Note(name: .G, intonation: .Sharp),
-            Note(name: .A, intonation: .Natural),
-            Note(name: .A, intonation: .Sharp),
-            Note(name: .B, intonation: .Natural)
-        ]
-    }
+    case Ionian,Dorian,Phrygian,Lydian,Mixolydian,Aeolian,Locrian
     
-    private static func createIntervals() -> [NoteInterval]{
-       return (0..<12).map {_ in NoteInterval.Halfstep}
-    }
-    
-    public static func index(forNote note:Note) -> Int?{
-        for (i,n) in notes.enumerate(){
-            if n == note { return i }
+    func intervals() -> [NoteInterval]{
+        switch self{
+        case .Ionian:
+            return [.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Wholestep,.Halfstep]
+        case .Dorian:
+            return [.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Wholestep,.Halfstep,.Wholestep]
+        case .Phrygian:
+            return [.Halfstep,.Wholestep,.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep]
+        case .Lydian:
+            return [.Wholestep,.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Halfstep]
+        case .Mixolydian:
+            return [.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Wholestep]
+        case .Aeolian:
+            return [.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Halfstep,.Wholestep]
+        case .Locrian:
+            return [.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Wholestep]
         }
-        return nil
-    }
-    public static func next(ofNote note:Note) -> Note{
-        var index:Int = self.index(forNote: note)!
-        index++
-        let condition:Bool = index > (notes.count - 1)
-        let result = condition ? notes.first : notes[index]
-        return result!
     }
     
-    public static func previous(ofNote note:Note) -> Note{
-        var index:Int = self.index(forNote: note)!
-        index--
-        let result = index < 0 ? notes.last : notes[index]
-        return result!
+    func chordKind() -> ChordKind{
+        switch self{
+        case .Ionian,.Lydian:
+            return ChordKind.Major7
+        case .Aeolian,.Phrygian,.Dorian:
+            return ChordKind.Minor7
+        case .Mixolydian:
+            return ChordKind.dom7
+        case .Locrian:
+            return ChordKind.Minor7b5
+        }
+    }
+    
+    func chordTones(inKey key:Note) -> [Note]{
+        let ns = self.notes(inKey: key)
+        return [ns[0],ns[2],ns[4],ns[6]]
+    }
+    
+    func notes(inKey key:Note) -> [Note]{
+        var result:[Note] = [key]
+        for i:NoteInterval in self.intervals(){
+            let lastNote = result.last!
+            result.append(lastNote.add(i))
+        }
+        return result
     }
 }
+
 
 public struct Scale {
-    let kind: ScaleKind
-    let key: Note
+    public let kind: ScaleKind
+    public let key: Note
     
-    public init(kind:ScaleKind = .Chromatic,key:Note = Note(name: .C, intonation: .Natural)){
+    public init(kind:ScaleKind = .Ionian,key:Note = Note(name: .C, intonation: .Natural)){
         self.kind = kind
         self.key = key
     }
-    
-    
+}
 
+public extension Scale{
+    public func chordKind() -> ChordKind{
+        return self.kind.chordKind()
+    }
+    public func chordTones() -> [Note]{
+        return self.kind.chordTones(inKey: self.key)
+    }
+    public func intervals() -> [NoteInterval]{
+        return self.kind.intervals()
+    }
+    
+    public func notes() -> [Note]{
+        return self.kind.notes(inKey: self.key)
+    }
+    
+    public func majorPentatonic() -> [Note]{
+        var ns:[Note] = ScaleKind.Ionian.notes(inKey: self.key)
+        ns.removeAtIndex(3)
+        ns.removeAtIndex(6)
+        return ns
+    }
+    
+    public func minorPentatonic() -> [Note]{
+        var ns:[Note] = ScaleKind.Aeolian.notes(inKey: self.key)
+        ns.removeAtIndex(1)
+        ns.removeAtIndex(5)
+        return ns
+    }
+    
 }

@@ -64,19 +64,20 @@ public func ==(lhs: Note, rhs: Note) -> Bool{
 
 public extension Note{
     public  func add(interval:NoteInterval) -> Note{
-        let max = interval.rawValue + 1
-        var result = self
-        max.times{result = result.next()}
-        return result
+        return ChromaticScale.add(interval, toNote: self)
     }
     public func minus(interval:NoteInterval)-> Note{
-        let max = interval.rawValue + 1
-        var result = self
-        max.times{result = result.previous()}
-        return result
+        return ChromaticScale.minus(interval, toNote: self)
     }
     public func eharmonicEquivalent() -> Note?{
         return EHarmonicEquivalent.equivalent(ofNote: self)
+    }
+    
+    public func hasEharmonicEquivalent() -> Bool{
+        if let  _ = EHarmonicEquivalent.equivalent(ofNote: self){
+            return true
+        }
+        return false
     }
     public func next() -> Note{
         return ChromaticScale.next(ofNote: self)
