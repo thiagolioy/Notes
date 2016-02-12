@@ -28,7 +28,7 @@ public enum ScaleKind{
         case .Mixolydian:
             return [.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Wholestep]
         case .Aeolian:
-            return [.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Halfstep,.Wholestep]
+            return [.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep]
         case .Locrian:
             return [.Halfstep,.Wholestep,.Wholestep,.Halfstep,.Wholestep,.Wholestep,.Wholestep]
         }
