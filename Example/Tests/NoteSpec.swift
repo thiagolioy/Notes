@@ -160,6 +160,98 @@ class NoteSpec: QuickSpec {
                     expect(nextNote.intonation) == NoteIntonation.Natural
                 }
             }
+            
+            describe("should be able to add intervals to note") {
+                describe("Halfstep") {
+                
+                    it("C more halfstep should be C#") {
+                        var note:Note = Note(name:.C,intonation: .Natural)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.C
+                        expect(note.intonation) == NoteIntonation.Sharp
+                    }
+
+                    it("C# more halfstep should be D") {
+                        var note:Note = Note(name:.C,intonation: .Sharp)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.D
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+
+                    it("D more halfstep should be D#") {
+                        var note:Note = Note(name:.D,intonation: .Natural)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.D
+                        expect(note.intonation) == NoteIntonation.Sharp
+                    }
+
+                    it("D# more halfstep should be E") {
+                        var note:Note = Note(name:.D,intonation: .Sharp)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.E
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+                    
+                    it("E more halfstep should be F") {
+                        var note:Note = Note(name:.E,intonation: .Natural)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.F
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+                    
+                    it("F more halfstep should be F#") {
+                        var note:Note = Note(name:.F,intonation: .Natural)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.F
+                        expect(note.intonation) == NoteIntonation.Sharp
+                    }
+                    
+                    it("F# more halfstep should be G") {
+                        var note:Note = Note(name:.F,intonation: .Sharp)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.G
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+                    
+                    it("G more halfstep should be G#") {
+                        var note:Note = Note(name:.G,intonation: .Natural)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.G
+                        expect(note.intonation) == NoteIntonation.Sharp
+                    }
+                    
+                    it("G# more halfstep should be A") {
+                        var note:Note = Note(name:.G,intonation: .Sharp)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.A
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+                    
+                    it("A more halfstep should be A#") {
+                        var note:Note = Note(name:.A,intonation: .Natural)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.A
+                        expect(note.intonation) == NoteIntonation.Sharp
+                    }
+                    
+                    it("A# more halfstep should be B") {
+                        var note:Note = Note(name:.A,intonation: .Sharp)
+                        note = note.add(.Halfstep)
+                        expect(note.name) == NoteName.B
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+                    
+                    it("B more halfstep should be C") {
+                        var note:Note = Note(name:.B,intonation: .Natural)
+                        note =  note.add(.Halfstep)
+                        expect(note.name) == NoteName.C
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+
+                }
+                
+
+            }
                 
             
         }

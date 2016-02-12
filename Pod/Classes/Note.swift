@@ -16,7 +16,7 @@ public enum NoteIntonation{
     case Flat,Natural,Sharp
 }
 
-public enum NoteInterval{
+public enum NoteInterval:Int{
     case Halfstep,Wholestep
 }
 
@@ -37,6 +37,16 @@ public func ==(lhs: Note, rhs: Note) -> Bool{
 
 
 public extension Note{
+    public  func add(interval:NoteInterval) -> Note{
+        let max = interval.rawValue + 1
+        let results = (0...max).map{ _ in  self.next() }
+        return results.last!
+    }
+    public func minus(interval:NoteInterval)-> Note{
+        let max = interval.rawValue + 1
+        let results = (0...max).map{ _ in  self.previous() }
+        return results.last!
+    }
     public func next() -> Note{
         return ChromaticScale.next(ofNote: self)
     }
