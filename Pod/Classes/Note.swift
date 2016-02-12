@@ -35,17 +35,28 @@ public func ==(lhs: Note, rhs: Note) -> Bool{
     return (lhs.name == rhs.name) && (lhs.intonation == rhs.intonation)
 }
 
+extension Int {
+    func times(f: () -> ()) {
+        if self > 0 {
+            for _ in 0..<self {
+                f()
+            }
+        }
+    }
+}
 
 public extension Note{
     public  func add(interval:NoteInterval) -> Note{
         let max = interval.rawValue + 1
-        let results = (0...max).map{ _ in  self.next() }
-        return results.last!
+        var result = self
+        max.times{result = result.next()}
+        return result
     }
     public func minus(interval:NoteInterval)-> Note{
         let max = interval.rawValue + 1
-        let results = (0...max).map{ _ in  self.previous() }
-        return results.last!
+        var result = self
+        max.times{result = result.previous()}
+        return result
     }
     public func next() -> Note{
         return ChromaticScale.next(ofNote: self)

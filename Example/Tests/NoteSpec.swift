@@ -161,6 +161,28 @@ class NoteSpec: QuickSpec {
                 }
             }
             
+            describe("should be able to decrease intervals from note") {
+                describe("Halfstep") {
+                    
+                    it("C minus halfstep should be B") {
+                        var note:Note = Note(name:.C,intonation: .Natural)
+                        note = note.minus(.Halfstep)
+                        expect(note.name) == NoteName.B
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
+                }
+                
+                describe("Wholestep") {
+                    
+                    it("C minus wholestep should be A#") {
+                        var note:Note = Note(name:.C,intonation: .Natural)
+                        note = note.minus(.Wholestep)
+                        expect(note.name) == NoteName.A
+                        expect(note.intonation) == NoteIntonation.Sharp
+                    }
+                }
+            }
+            
             describe("should be able to add intervals to note") {
                 describe("Halfstep") {
                 
@@ -248,6 +270,16 @@ class NoteSpec: QuickSpec {
                         expect(note.intonation) == NoteIntonation.Natural
                     }
 
+                }
+                
+                describe("wholestep") {
+                    
+                    it("C more wholestep should be D") {
+                        var note:Note = Note(name:.C,intonation: .Natural)
+                        note = note.add(.Wholestep)
+                        expect(note.name) == NoteName.D
+                        expect(note.intonation) == NoteIntonation.Natural
+                    }
                 }
                 
 
