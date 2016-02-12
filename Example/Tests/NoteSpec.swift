@@ -286,6 +286,23 @@ class NoteSpec: QuickSpec {
             }
             
             
+            describe("fullname") {
+                it("Sharp note should have a fullname") {
+                    let note:Note = Note(name:.C,intonation: .Sharp)
+                    expect(note.fullname()) == "C♯"
+                }
+                
+                it("Flat note should have a fullname") {
+                    let note:Note = Note(name:.D,intonation: .Flat)
+                    expect(note.fullname()) == "D♭"
+                }
+                
+                it("Natural note should have a fullname") {
+                    let note:Note = Note(name:.D,intonation: .Natural)
+                    expect(note.fullname()) == "D"
+                }
+            }
+            
             describe("eharmonicEquivalent") {
                 it("C# should be equivalent to Db") {
                     let note:Note = Note(name:.C,intonation: .Sharp)

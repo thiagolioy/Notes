@@ -8,12 +8,12 @@
 
 import Foundation
 
-public enum NoteName{
+public enum NoteName:String{
     case A,B,C,D,E,F,G
 }
 
-public enum NoteIntonation{
-    case Flat,Natural,Sharp
+public enum NoteIntonation:String{
+    case Flat = "♭",Natural = "",Sharp = "♯"
 }
 
 public enum NoteInterval:Int{
@@ -25,6 +25,10 @@ public struct Note : Hashable{
     public let intonation: NoteIntonation
     public var hashValue: Int {
         return self.name.hashValue + self.intonation.hashValue
+    }
+    
+    public func fullname() -> String{
+        return name.rawValue + intonation.rawValue
     }
     
     public init(name:NoteName, intonation:NoteIntonation){
@@ -57,18 +61,6 @@ public struct EHarmonicEquivalent{
 public func ==(lhs: Note, rhs: Note) -> Bool{
     return (lhs.name == rhs.name) && (lhs.intonation == rhs.intonation)
 }
-
-extension Int {
-    func times(f: () -> ()) {
-        if self > 0 {
-            for _ in 0..<self {
-                f()
-            }
-        }
-    }
-}
-
-
 
 public extension Note{
     public  func add(interval:NoteInterval) -> Note{
