@@ -286,5 +286,47 @@ class ScaleSpec: QuickSpec {
                 }
             }
         }
+        
+        describe("Locrian Mode") {
+            let expectedNotes = [
+                Note(name: .C, intonation: .Natural),
+                Note(name: .D, intonation: .Flat),
+                Note(name: .E, intonation: .Flat),
+                Note(name: .F, intonation: .Natural),
+                Note(name: .G, intonation: .Flat),
+                Note(name: .A, intonation: .Flat),
+                Note(name: .B, intonation: .Flat),
+                Note(name: .C, intonation: .Natural)
+            ]
+            
+            let scale = Scale(kind: .Locrian, key: expectedNotes.first!)
+            
+            it("should have access to scale key ") {
+                expect(scale.key) == Note(name: .C, intonation: .Natural)
+            }
+            it("should have access to scale kind ") {
+                expect(scale.kind) == ScaleKind.Locrian
+            }
+            
+            it("should have expected notes") {
+                self.compareScaleNotes(expectedNotes, actual: scale.notes())
+            }
+            
+            describe("chordTones") {
+                let expectedChordTones = [
+                    Note(name: .C, intonation: .Natural),
+                    Note(name: .E, intonation: .Flat),
+                    Note(name: .G, intonation: .Flat),
+                    Note(name: .B, intonation: .Flat)
+                ]
+                
+                it("should be of kind") {
+                    expect(scale.chordKind()) == ChordKind.Minor7b5
+                }
+                it("should have expected chordTones") {
+                    self.compareChordTones(expectedChordTones, actual: scale.chordTones())
+                }
+            }
+        }
     }
 }
