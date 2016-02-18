@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4752EF1C75560700A4741A /* InstrumentStringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4752EE1C75560700A4741A /* InstrumentStringSpec.swift */; };
 		2009C53E1C6D765900F8A497 /* ScaleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009C53D1C6D765900F8A497 /* ScaleSpec.swift */; };
 		202168381C68B316008C369C /* NoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202168371C68B316008C369C /* NoteSpec.swift */; };
 		45ADC445AB28A15186E6E9CB /* Pods_notes_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73BED29023649A19F9A21DC /* Pods_notes_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4752EE1C75560700A4741A /* InstrumentStringSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentStringSpec.swift; sourceTree = "<group>"; };
 		17459CFA9092307D3D7C0DC7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2009C53D1C6D765900F8A497 /* ScaleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSpec.swift; sourceTree = "<group>"; };
 		202168371C68B316008C369C /* NoteSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteSpec.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				202168371C68B316008C369C /* NoteSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				2009C53D1C6D765900F8A497 /* ScaleSpec.swift */,
+				0A4752EE1C75560700A4741A /* InstrumentStringSpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				202168381C68B316008C369C /* NoteSpec.swift in Sources */,
+				0A4752EF1C75560700A4741A /* InstrumentStringSpec.swift in Sources */,
 				2009C53E1C6D765900F8A497 /* ScaleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
