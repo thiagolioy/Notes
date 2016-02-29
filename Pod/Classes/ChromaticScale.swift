@@ -9,8 +9,8 @@
 import Foundation
 
 public struct ChromaticScale{
-    static let notes:[Note] = ChromaticScale.createNotes()
-    static let intervals:[NoteInterval] = ChromaticScale.createIntervals()
+    public static let notes:[Note] = ChromaticScale.createNotes()
+    public static let intervals:[NoteInterval] = ChromaticScale.createIntervals()
     
     private static func createNotes() -> [Note]{
         return [
