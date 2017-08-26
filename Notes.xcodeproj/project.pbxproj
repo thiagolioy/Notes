@@ -15,6 +15,19 @@
 		0A3494031F51D7DD000E23DA /* IonianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */; };
 		0A3494041F51D7DE000E23DA /* IonianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */; };
 		0A3494051F51D7DF000E23DA /* IonianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */; };
+		0A3494091F51F64A000E23DA /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494081F51F64A000E23DA /* Chord.swift */; };
+		0A34940B1F51FC52000E23DA /* MajorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940A1F51FC52000E23DA /* MajorChord.swift */; };
+		0A34940F1F51FCD9000E23DA /* MajorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940D1F51FCCA000E23DA /* MajorChordSpec.swift */; };
+		0A3494101F51FCD9000E23DA /* MajorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940D1F51FCCA000E23DA /* MajorChordSpec.swift */; };
+		0A3494111F51FCDB000E23DA /* MajorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940D1F51FCCA000E23DA /* MajorChordSpec.swift */; };
+		0A3494131F51FE36000E23DA /* MinorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494121F51FE36000E23DA /* MinorChord.swift */; };
+		0A3494161F51FE81000E23DA /* MinorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494141F51FE73000E23DA /* MinorChordSpec.swift */; };
+		0A3494171F51FE82000E23DA /* MinorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494141F51FE73000E23DA /* MinorChordSpec.swift */; };
+		0A3494181F51FE83000E23DA /* MinorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494141F51FE73000E23DA /* MinorChordSpec.swift */; };
+		0A34941B1F51FF3A000E23DA /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
+		0A34941F1F5204E1000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
+		0A3494201F5204E2000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
+		0A3494211F5204E3000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
 		3549BB501DA38A2000C63030 /* Notes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Notes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB511DA38A2000C63030 /* Notes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Notes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB521DA38A2100C63030 /* Notes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Notes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -232,6 +245,13 @@
 		0A3493FA1F51D2EB000E23DA /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		0A3493FD1F51D4A3000E23DA /* IonianMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IonianMode.swift; sourceTree = "<group>"; };
 		0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IonianModeSpec.swift; sourceTree = "<group>"; };
+		0A3494081F51F64A000E23DA /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
+		0A34940A1F51FC52000E23DA /* MajorChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorChord.swift; sourceTree = "<group>"; };
+		0A34940D1F51FCCA000E23DA /* MajorChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorChordSpec.swift; sourceTree = "<group>"; };
+		0A3494121F51FE36000E23DA /* MinorChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorChord.swift; sourceTree = "<group>"; };
+		0A3494141F51FE73000E23DA /* MinorChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorChordSpec.swift; sourceTree = "<group>"; };
+		0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiatonicHarmony.swift; sourceTree = "<group>"; };
+		0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiatonicHarmonySpec.swift; sourceTree = "<group>"; };
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +381,51 @@
 			name = Scales;
 			sourceTree = "<group>";
 		};
+		0A3494061F51F629000E23DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A3493E71F51C3CA000E23DA /* Note.swift */,
+				0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */,
+				0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0A3494071F51F63A000E23DA /* Chords */ = {
+			isa = PBXGroup;
+			children = (
+				0A3494081F51F64A000E23DA /* Chord.swift */,
+				0A34940A1F51FC52000E23DA /* MajorChord.swift */,
+				0A3494121F51FE36000E23DA /* MinorChord.swift */,
+			);
+			name = Chords;
+			sourceTree = "<group>";
+		};
+		0A34940C1F51FCBC000E23DA /* Chords */ = {
+			isa = PBXGroup;
+			children = (
+				0A34940D1F51FCCA000E23DA /* MajorChordSpec.swift */,
+				0A3494141F51FE73000E23DA /* MinorChordSpec.swift */,
+			);
+			name = Chords;
+			sourceTree = "<group>";
+		};
+		0A3494191F51FF2F000E23DA /* Harmony */ = {
+			isa = PBXGroup;
+			children = (
+				0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */,
+			);
+			name = Harmony;
+			sourceTree = "<group>";
+		};
+		0A34941C1F5204B9000E23DA /* Harmony */ = {
+			isa = PBXGroup;
+			children = (
+				0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */,
+			);
+			name = Harmony;
+			sourceTree = "<group>";
+		};
 		3549BAFB1DA387DB00C63030 = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +463,8 @@
 		3549BB191DA3890B00C63030 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0A34941C1F5204B9000E23DA /* Harmony */,
+				0A34940C1F51FCBC000E23DA /* Chords */,
 				0A3494001F51D6CC000E23DA /* Scales */,
 				3549BB8A1DA38C0A00C63030 /* NotesSpec.swift */,
 				3549BB5B1DA38A8C00C63030 /* Supporting Files */,
@@ -427,10 +494,10 @@
 		3549BB5C1DA38AA500C63030 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0A3494191F51FF2F000E23DA /* Harmony */,
+				0A3494071F51F63A000E23DA /* Chords */,
+				0A3494061F51F629000E23DA /* Core */,
 				0A3493FC1F51D483000E23DA /* Scales */,
-				0A3493E71F51C3CA000E23DA /* Note.swift */,
-				0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */,
-				0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -1006,7 +1073,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3494131F51FE36000E23DA /* MinorChord.swift in Sources */,
+				0A34940B1F51FC52000E23DA /* MajorChord.swift in Sources */,
+				0A3494091F51F64A000E23DA /* Chord.swift in Sources */,
 				0A3493FE1F51D4A3000E23DA /* IonianMode.swift in Sources */,
+				0A34941B1F51FF3A000E23DA /* DiatonicHarmony.swift in Sources */,
 				0A3493E81F51C3CA000E23DA /* Note.swift in Sources */,
 				0A3493F91F51CAAC000E23DA /* EHarmonicEquivalent.swift in Sources */,
 				0A3493FB1F51D2EB000E23DA /* Scale.swift in Sources */,
@@ -1039,8 +1110,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A34940F1F51FCD9000E23DA /* MajorChordSpec.swift in Sources */,
 				3549BB8B1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
 				0A3494031F51D7DD000E23DA /* IonianModeSpec.swift in Sources */,
+				0A34941F1F5204E1000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A3494161F51FE81000E23DA /* MinorChordSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,8 +1122,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3494111F51FCDB000E23DA /* MajorChordSpec.swift in Sources */,
 				3549BB8D1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
 				0A3494051F51D7DF000E23DA /* IonianModeSpec.swift in Sources */,
+				0A3494211F5204E3000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A3494181F51FE83000E23DA /* MinorChordSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,8 +1134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3494101F51FCD9000E23DA /* MajorChordSpec.swift in Sources */,
 				3549BB8C1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
 				0A3494041F51D7DE000E23DA /* IonianModeSpec.swift in Sources */,
+				0A3494201F5204E2000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A3494171F51FE82000E23DA /* MinorChordSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

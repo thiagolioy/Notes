@@ -15,14 +15,18 @@ class IonianModeSpec: QuickSpec {
     override func spec() {
         
         describe("Ionian Mode") {
+            
+            var mode: IonianMode!
+            beforeEach {
+                mode = IonianMode()
+            }
+            
             it("should have the expected names") {
-                let mode = IonianMode()
                 expect(mode.names.first!).to(equal("Ionian Mode"))
                 expect(mode.names.last!).to(equal("Major Scale"))
             }
             
             it("should have the expected intervals") {
-                let mode = IonianMode()
                 expect(mode.intervals).to(equal([
                     .wholestep,.wholestep,.halfstep,
                     .wholestep,.wholestep,.wholestep,
@@ -31,7 +35,6 @@ class IonianModeSpec: QuickSpec {
             }
             
             it("should have the expected notes in key of C Natural") {
-                let mode = IonianMode()
                 let key = Note(name: .C, intonation: .natural)
                 let notes = mode.scaleNotes(inKey: key)
                 expect(notes).to(equal([
