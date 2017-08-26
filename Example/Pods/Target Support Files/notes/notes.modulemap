@@ -1,6 +1,0 @@
-framework module notes {
-  umbrella header "notes-umbrella.h"
-
-  export *
-  module * { export * }
-}
