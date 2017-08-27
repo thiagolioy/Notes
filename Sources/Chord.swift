@@ -17,10 +17,10 @@ public enum ChordIntervals {
     case perfectFourth
     case diminishedFifth
     case perfectFifth
-    case minorSix
-    case majorSix
-    case minorSeven
-    case majorSeven
+    case minorSixth
+    case majorSixth
+    case minorSeventh
+    case majorSeventh
     case octave
     
     func intervals() -> [Note.Interval] {
@@ -41,13 +41,13 @@ public enum ChordIntervals {
             return [.wholestep, .wholestep, .wholestep]
         case .perfectFifth:
             return [.wholestep, .wholestep, .wholestep, .halfstep]
-        case .minorSix:
+        case .minorSixth:
                 return [.wholestep, .wholestep, .wholestep, .wholestep]
-        case .majorSix:
+        case .majorSixth:
             return [.wholestep, .wholestep, .wholestep, .wholestep, .halfstep]
-        case .minorSeven:
+        case .minorSeventh:
             return [.wholestep, .wholestep, .wholestep, .wholestep, .wholestep]
-        case .majorSeven:
+        case .majorSeventh:
             return [.wholestep, .wholestep, .wholestep, .wholestep, .wholestep, .halfstep]
         case .octave:
             return [.wholestep, .wholestep, .wholestep, .wholestep, .wholestep, .wholestep]
@@ -78,6 +78,9 @@ extension Chord {
             var mutableKey = key
             chordInterval.intervals().forEach { interval in
                 mutableKey = mutableKey.add(interval: interval)
+            }
+            if mutableKey.intonation == .sharp{
+                mutableKey = mutableKey.eharmonicEquivalent()!
             }
             tones.append(mutableKey)
         }

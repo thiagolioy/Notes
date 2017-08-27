@@ -1,8 +1,8 @@
 //
-//  MinorChordSpec.swift
+//  MinorSeventhChordSpec.swift
 //  Notes
 //
-//  Created by Thiago Lioy on 26/08/17.
+//  Created by Thiago Lioy on 27/08/17.
 //  Copyright © 2017 com.tplioy. All rights reserved.
 //
 
@@ -11,24 +11,24 @@ import Quick
 import Nimble
 @testable import Notes
 
-class MinorChordSpec: QuickSpec {
+class MinorSeventhChordSpec: QuickSpec {
     
     override func spec() {
         
-        describe("Minor Chord") {
+        describe("Minor Seventh Chord") {
             
-            var chord: MinorChord!
+            var chord: MinorSeventhChord!
             beforeEach {
                 let key = Note(name: .C, intonation: .natural)
-                chord = MinorChord(key: key)
+                chord = MinorSeventhChord(key: key)
             }
             
             it("should have the expected symbol") {
-                expect(chord.symbol).to(equal("m"))
+                expect(chord.symbol).to(equal("m7"))
             }
             
             it("should have the expected full name") {
-                expect(chord.fullName()).to(equal("Cm"))
+                expect(chord.fullName()).to(equal("Cm7"))
             }
             
             it("should have the expected intervals") {
@@ -36,8 +36,9 @@ class MinorChordSpec: QuickSpec {
                 expect(chord.chordIntervals).to(equal([
                     .root,
                     .minorThird,
-                    .perfectFifth
-                    ]))
+                    .perfectFifth,
+                    .minorSeventh
+                ]))
             }
             
             it("should have the expected chord tones in key of C Natural") {
@@ -46,11 +47,11 @@ class MinorChordSpec: QuickSpec {
                     Note(name: .C, intonation: .natural),
                     Note(name: .E, intonation: .flat),
                     Note(name: .G, intonation: .natural),
+                    Note(name: .B, intonation: .flat),
                 ]))
             }
         }
     }
     
 }
-
 

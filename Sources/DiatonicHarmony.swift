@@ -10,7 +10,7 @@ import Foundation
 
 public enum DiatonicHarmony {
     case major
-//    case minor
+    case minor
     
     func chords(inKey key: Note) -> [Chord] {
         switch self {
@@ -18,29 +18,45 @@ public enum DiatonicHarmony {
             let mode = IonianMode()
             let notes = mode.scaleNotes(inKey: key)
             let chordTypes: [Chord.Type] = [
-                MajorChord.self,
-                MinorChord.self,
-                MinorChord.self,
-                MajorChord.self,
-                MajorChord.self,
-                MinorChord.self,
-                MinorChord.self
+                MajorSeventhChord.self,
+                MinorSeventhChord.self,
+                MinorSeventhChord.self,
+                MajorSeventhChord.self,
+                DominantSeventhChord.self,
+                MinorSeventhChord.self,
+                HalfDiminishedSeventhChord.self
             ]
             
-//            if notes.count != chordTypes.count {
-//                fatalError(message: "Should have the same number of notes and chord types")
-//            }
-            var chords: [Chord] = []
-            for (index, chordType) in chordTypes.enumerated() {
-                let note = notes[index]
-                let chord: Chord = chordType.init(key: note)
-                chords.append(chord)
-            }
-            return chords
+            return chords(from: notes, with: chordTypes)
             
-//        case .minor:
+        case .minor:
+            let mode = AeolianMode()
+            let notes = mode.scaleNotes(inKey: key)
+            let chordTypes: [Chord.Type] = [
+                MinorSeventhChord.self,
+                HalfDiminishedSeventhChord.self,
+                MajorSeventhChord.self,
+                MinorSeventhChord.self,
+                MinorSeventhChord.self,
+                MajorSeventhChord.self,
+                MajorSeventhChord.self
+            ]
             
+            return chords(from: notes, with: chordTypes)
         }
+    }
+    
+    private func chords(from notes: [Note], with types: [Chord.Type]) -> [Chord] {
+        var chords: [Chord] = []
+        for (index, chordType) in types.enumerated() {
+            var note = notes[index]
+            if note.intonation == .sharp{
+                note = note.eharmonicEquivalent()!
+            }
+            let chord: Chord = chordType.init(key: note)
+            chords.append(chord)
+        }
+        return chords
     }
     
 }

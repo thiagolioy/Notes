@@ -20,7 +20,10 @@ public extension Scale {
         var notes = [key]
         for interval in intervals {
             let lastNote = notes.last!
-            let currentNote = lastNote.add(interval: interval)
+            var currentNote = lastNote.add(interval: interval)
+            if currentNote.intonation == .sharp {
+                currentNote = currentNote.eharmonicEquivalent()!
+            }
             notes.append(currentNote)
         }
         return notes

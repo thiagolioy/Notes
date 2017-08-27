@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2C527D1F537FA3004BD4E7 /* MajorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C527C1F537FA3004BD4E7 /* MajorSeventhChord.swift */; };
+		0A2C528C1F537FAE004BD4E7 /* MinorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528B1F537FAE004BD4E7 /* MinorSeventhChord.swift */; };
+		0A2C528E1F537FD7004BD4E7 /* DominantSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528D1F537FD7004BD4E7 /* DominantSeventhChord.swift */; };
+		0A2C52901F538144004BD4E7 /* HalfDiminishedSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528F1F538144004BD4E7 /* HalfDiminishedSeventhChord.swift */; };
+		0A2C52951F53844F004BD4E7 /* MajorSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52911F5382FF004BD4E7 /* MajorSeventhChordSpec.swift */; };
+		0A2C52961F538450004BD4E7 /* MajorSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52911F5382FF004BD4E7 /* MajorSeventhChordSpec.swift */; };
+		0A2C52971F538451004BD4E7 /* MajorSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52911F5382FF004BD4E7 /* MajorSeventhChordSpec.swift */; };
+		0A2C52981F538456004BD4E7 /* MinorSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52931F5383BC004BD4E7 /* MinorSeventhChordSpec.swift */; };
+		0A2C52991F538457004BD4E7 /* MinorSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52931F5383BC004BD4E7 /* MinorSeventhChordSpec.swift */; };
+		0A2C529A1F538458004BD4E7 /* MinorSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52931F5383BC004BD4E7 /* MinorSeventhChordSpec.swift */; };
+		0A2C529D1F538506004BD4E7 /* DominantSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C529B1F5384B9004BD4E7 /* DominantSeventhChordSpec.swift */; };
+		0A2C529E1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C529B1F5384B9004BD4E7 /* DominantSeventhChordSpec.swift */; };
+		0A2C529F1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C529B1F5384B9004BD4E7 /* DominantSeventhChordSpec.swift */; };
+		0A2C52A21F538621004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A01F538596004BD4E7 /* HalfDiminishedSeventhChordSpec.swift */; };
+		0A2C52A31F538622004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A01F538596004BD4E7 /* HalfDiminishedSeventhChordSpec.swift */; };
+		0A2C52A41F538623004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A01F538596004BD4E7 /* HalfDiminishedSeventhChordSpec.swift */; };
+		0A2C52A61F5388FF004BD4E7 /* AeolianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */; };
+		0A2C52A91F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */; };
+		0A2C52AA1F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */; };
+		0A2C52AB1F538BAD004BD4E7 /* AeolianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */; };
 		0A3493E81F51C3CA000E23DA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493E71F51C3CA000E23DA /* Note.swift */; };
 		0A3493F71F51C8FB000E23DA /* ChromaticScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */; };
 		0A3493F91F51CAAC000E23DA /* EHarmonicEquivalent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */; };
@@ -239,6 +259,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2C527C1F537FA3004BD4E7 /* MajorSeventhChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorSeventhChord.swift; sourceTree = "<group>"; };
+		0A2C528B1F537FAE004BD4E7 /* MinorSeventhChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorSeventhChord.swift; sourceTree = "<group>"; };
+		0A2C528D1F537FD7004BD4E7 /* DominantSeventhChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DominantSeventhChord.swift; sourceTree = "<group>"; };
+		0A2C528F1F538144004BD4E7 /* HalfDiminishedSeventhChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfDiminishedSeventhChord.swift; sourceTree = "<group>"; };
+		0A2C52911F5382FF004BD4E7 /* MajorSeventhChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorSeventhChordSpec.swift; sourceTree = "<group>"; };
+		0A2C52931F5383BC004BD4E7 /* MinorSeventhChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorSeventhChordSpec.swift; sourceTree = "<group>"; };
+		0A2C529B1F5384B9004BD4E7 /* DominantSeventhChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DominantSeventhChordSpec.swift; sourceTree = "<group>"; };
+		0A2C52A01F538596004BD4E7 /* HalfDiminishedSeventhChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfDiminishedSeventhChordSpec.swift; sourceTree = "<group>"; };
+		0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AeolianMode.swift; sourceTree = "<group>"; };
+		0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AeolianModeSpec.swift; sourceTree = "<group>"; };
 		0A3493E71F51C3CA000E23DA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaticScale.swift; sourceTree = "<group>"; };
 		0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EHarmonicEquivalent.swift; sourceTree = "<group>"; };
@@ -369,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3493FD1F51D4A3000E23DA /* IonianMode.swift */,
+				0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */,
 			);
 			name = Modes;
 			sourceTree = "<group>";
@@ -377,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */,
+				0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */,
 			);
 			name = Scales;
 			sourceTree = "<group>";
@@ -397,6 +429,10 @@
 				0A3494081F51F64A000E23DA /* Chord.swift */,
 				0A34940A1F51FC52000E23DA /* MajorChord.swift */,
 				0A3494121F51FE36000E23DA /* MinorChord.swift */,
+				0A2C527C1F537FA3004BD4E7 /* MajorSeventhChord.swift */,
+				0A2C528B1F537FAE004BD4E7 /* MinorSeventhChord.swift */,
+				0A2C528D1F537FD7004BD4E7 /* DominantSeventhChord.swift */,
+				0A2C528F1F538144004BD4E7 /* HalfDiminishedSeventhChord.swift */,
 			);
 			name = Chords;
 			sourceTree = "<group>";
@@ -406,6 +442,10 @@
 			children = (
 				0A34940D1F51FCCA000E23DA /* MajorChordSpec.swift */,
 				0A3494141F51FE73000E23DA /* MinorChordSpec.swift */,
+				0A2C52911F5382FF004BD4E7 /* MajorSeventhChordSpec.swift */,
+				0A2C52931F5383BC004BD4E7 /* MinorSeventhChordSpec.swift */,
+				0A2C529B1F5384B9004BD4E7 /* DominantSeventhChordSpec.swift */,
+				0A2C52A01F538596004BD4E7 /* HalfDiminishedSeventhChordSpec.swift */,
 			);
 			name = Chords;
 			sourceTree = "<group>";
@@ -1073,13 +1113,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2C52A61F5388FF004BD4E7 /* AeolianMode.swift in Sources */,
 				0A3494131F51FE36000E23DA /* MinorChord.swift in Sources */,
 				0A34940B1F51FC52000E23DA /* MajorChord.swift in Sources */,
+				0A2C527D1F537FA3004BD4E7 /* MajorSeventhChord.swift in Sources */,
 				0A3494091F51F64A000E23DA /* Chord.swift in Sources */,
 				0A3493FE1F51D4A3000E23DA /* IonianMode.swift in Sources */,
 				0A34941B1F51FF3A000E23DA /* DiatonicHarmony.swift in Sources */,
+				0A2C528E1F537FD7004BD4E7 /* DominantSeventhChord.swift in Sources */,
 				0A3493E81F51C3CA000E23DA /* Note.swift in Sources */,
 				0A3493F91F51CAAC000E23DA /* EHarmonicEquivalent.swift in Sources */,
+				0A2C528C1F537FAE004BD4E7 /* MinorSeventhChord.swift in Sources */,
+				0A2C52901F538144004BD4E7 /* HalfDiminishedSeventhChord.swift in Sources */,
 				0A3493FB1F51D2EB000E23DA /* Scale.swift in Sources */,
 				0A3493F71F51C8FB000E23DA /* ChromaticScale.swift in Sources */,
 			);
@@ -1112,9 +1157,14 @@
 			files = (
 				0A34940F1F51FCD9000E23DA /* MajorChordSpec.swift in Sources */,
 				3549BB8B1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
+				0A2C52A21F538621004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494031F51D7DD000E23DA /* IonianModeSpec.swift in Sources */,
+				0A2C529D1F538506004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
 				0A34941F1F5204E1000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A2C52981F538456004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
+				0A2C52A91F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */,
 				0A3494161F51FE81000E23DA /* MinorChordSpec.swift in Sources */,
+				0A2C52951F53844F004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,9 +1174,14 @@
 			files = (
 				0A3494111F51FCDB000E23DA /* MajorChordSpec.swift in Sources */,
 				3549BB8D1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
+				0A2C52A41F538623004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494051F51D7DF000E23DA /* IonianModeSpec.swift in Sources */,
+				0A2C529F1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
 				0A3494211F5204E3000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A2C529A1F538458004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
+				0A2C52AB1F538BAD004BD4E7 /* AeolianModeSpec.swift in Sources */,
 				0A3494181F51FE83000E23DA /* MinorChordSpec.swift in Sources */,
+				0A2C52971F538451004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1136,9 +1191,14 @@
 			files = (
 				0A3494101F51FCD9000E23DA /* MajorChordSpec.swift in Sources */,
 				3549BB8C1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
+				0A2C52A31F538622004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494041F51D7DE000E23DA /* IonianModeSpec.swift in Sources */,
+				0A2C529E1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
 				0A3494201F5204E2000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A2C52991F538457004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
+				0A2C52AA1F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */,
 				0A3494171F51FE82000E23DA /* MinorChordSpec.swift in Sources */,
+				0A2C52961F538450004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
