@@ -48,6 +48,48 @@
 		0A34941F1F5204E1000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
 		0A3494201F5204E2000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
 		0A3494211F5204E3000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
+		0AB63F621F53925300E2F76C /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
+		0AB63F701F53925400E2F76C /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
+		0AB63F711F53925500E2F76C /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
+		0AB63F721F53925A00E2F76C /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494081F51F64A000E23DA /* Chord.swift */; };
+		0AB63F731F53925A00E2F76C /* MajorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940A1F51FC52000E23DA /* MajorChord.swift */; };
+		0AB63F741F53925A00E2F76C /* MinorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494121F51FE36000E23DA /* MinorChord.swift */; };
+		0AB63F751F53925A00E2F76C /* MajorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C527C1F537FA3004BD4E7 /* MajorSeventhChord.swift */; };
+		0AB63F761F53925A00E2F76C /* MinorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528B1F537FAE004BD4E7 /* MinorSeventhChord.swift */; };
+		0AB63F771F53925A00E2F76C /* DominantSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528D1F537FD7004BD4E7 /* DominantSeventhChord.swift */; };
+		0AB63F781F53925A00E2F76C /* HalfDiminishedSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528F1F538144004BD4E7 /* HalfDiminishedSeventhChord.swift */; };
+		0AB63F791F53925B00E2F76C /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494081F51F64A000E23DA /* Chord.swift */; };
+		0AB63F7A1F53925B00E2F76C /* MajorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940A1F51FC52000E23DA /* MajorChord.swift */; };
+		0AB63F7B1F53925B00E2F76C /* MinorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494121F51FE36000E23DA /* MinorChord.swift */; };
+		0AB63F7C1F53925B00E2F76C /* MajorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C527C1F537FA3004BD4E7 /* MajorSeventhChord.swift */; };
+		0AB63F7D1F53925B00E2F76C /* MinorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528B1F537FAE004BD4E7 /* MinorSeventhChord.swift */; };
+		0AB63F7E1F53925B00E2F76C /* DominantSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528D1F537FD7004BD4E7 /* DominantSeventhChord.swift */; };
+		0AB63F7F1F53925B00E2F76C /* HalfDiminishedSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528F1F538144004BD4E7 /* HalfDiminishedSeventhChord.swift */; };
+		0AB63F801F53925C00E2F76C /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494081F51F64A000E23DA /* Chord.swift */; };
+		0AB63F811F53925C00E2F76C /* MajorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34940A1F51FC52000E23DA /* MajorChord.swift */; };
+		0AB63F821F53925C00E2F76C /* MinorChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494121F51FE36000E23DA /* MinorChord.swift */; };
+		0AB63F831F53925C00E2F76C /* MajorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C527C1F537FA3004BD4E7 /* MajorSeventhChord.swift */; };
+		0AB63F841F53925C00E2F76C /* MinorSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528B1F537FAE004BD4E7 /* MinorSeventhChord.swift */; };
+		0AB63F851F53925C00E2F76C /* DominantSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528D1F537FD7004BD4E7 /* DominantSeventhChord.swift */; };
+		0AB63F861F53925C00E2F76C /* HalfDiminishedSeventhChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C528F1F538144004BD4E7 /* HalfDiminishedSeventhChord.swift */; };
+		0AB63F871F53926100E2F76C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493E71F51C3CA000E23DA /* Note.swift */; };
+		0AB63F881F53926100E2F76C /* ChromaticScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */; };
+		0AB63F891F53926100E2F76C /* EHarmonicEquivalent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */; };
+		0AB63F8A1F53926200E2F76C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493E71F51C3CA000E23DA /* Note.swift */; };
+		0AB63F8B1F53926200E2F76C /* ChromaticScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */; };
+		0AB63F8C1F53926200E2F76C /* EHarmonicEquivalent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */; };
+		0AB63F8D1F53926300E2F76C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493E71F51C3CA000E23DA /* Note.swift */; };
+		0AB63F8E1F53926300E2F76C /* ChromaticScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F61F51C8FB000E23DA /* ChromaticScale.swift */; };
+		0AB63F8F1F53926300E2F76C /* EHarmonicEquivalent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493F81F51CAAC000E23DA /* EHarmonicEquivalent.swift */; };
+		0AB63F901F53926700E2F76C /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493FA1F51D2EB000E23DA /* Scale.swift */; };
+		0AB63F911F53926800E2F76C /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493FA1F51D2EB000E23DA /* Scale.swift */; };
+		0AB63F921F53926800E2F76C /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493FA1F51D2EB000E23DA /* Scale.swift */; };
+		0AB63F931F53926C00E2F76C /* IonianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493FD1F51D4A3000E23DA /* IonianMode.swift */; };
+		0AB63F941F53926C00E2F76C /* AeolianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */; };
+		0AB63F951F53926D00E2F76C /* IonianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493FD1F51D4A3000E23DA /* IonianMode.swift */; };
+		0AB63F961F53926D00E2F76C /* AeolianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */; };
+		0AB63F971F53926E00E2F76C /* IonianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3493FD1F51D4A3000E23DA /* IonianMode.swift */; };
+		0AB63F981F53926E00E2F76C /* AeolianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */; };
 		3549BB501DA38A2000C63030 /* Notes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Notes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB511DA38A2000C63030 /* Notes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Notes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB521DA38A2100C63030 /* Notes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Notes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1134,6 +1176,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB63F981F53926E00E2F76C /* AeolianMode.swift in Sources */,
+				0AB63F8F1F53926300E2F76C /* EHarmonicEquivalent.swift in Sources */,
+				0AB63F821F53925C00E2F76C /* MinorChord.swift in Sources */,
+				0AB63F801F53925C00E2F76C /* Chord.swift in Sources */,
+				0AB63F971F53926E00E2F76C /* IonianMode.swift in Sources */,
+				0AB63F861F53925C00E2F76C /* HalfDiminishedSeventhChord.swift in Sources */,
+				0AB63F851F53925C00E2F76C /* DominantSeventhChord.swift in Sources */,
+				0AB63F811F53925C00E2F76C /* MajorChord.swift in Sources */,
+				0AB63F8D1F53926300E2F76C /* Note.swift in Sources */,
+				0AB63F711F53925500E2F76C /* DiatonicHarmony.swift in Sources */,
+				0AB63F841F53925C00E2F76C /* MinorSeventhChord.swift in Sources */,
+				0AB63F831F53925C00E2F76C /* MajorSeventhChord.swift in Sources */,
+				0AB63F921F53926800E2F76C /* Scale.swift in Sources */,
+				0AB63F8E1F53926300E2F76C /* ChromaticScale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,6 +1197,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB63F941F53926C00E2F76C /* AeolianMode.swift in Sources */,
+				0AB63F891F53926100E2F76C /* EHarmonicEquivalent.swift in Sources */,
+				0AB63F741F53925A00E2F76C /* MinorChord.swift in Sources */,
+				0AB63F721F53925A00E2F76C /* Chord.swift in Sources */,
+				0AB63F931F53926C00E2F76C /* IonianMode.swift in Sources */,
+				0AB63F781F53925A00E2F76C /* HalfDiminishedSeventhChord.swift in Sources */,
+				0AB63F771F53925A00E2F76C /* DominantSeventhChord.swift in Sources */,
+				0AB63F731F53925A00E2F76C /* MajorChord.swift in Sources */,
+				0AB63F871F53926100E2F76C /* Note.swift in Sources */,
+				0AB63F621F53925300E2F76C /* DiatonicHarmony.swift in Sources */,
+				0AB63F761F53925A00E2F76C /* MinorSeventhChord.swift in Sources */,
+				0AB63F751F53925A00E2F76C /* MajorSeventhChord.swift in Sources */,
+				0AB63F901F53926700E2F76C /* Scale.swift in Sources */,
+				0AB63F881F53926100E2F76C /* ChromaticScale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1148,6 +1218,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB63F961F53926D00E2F76C /* AeolianMode.swift in Sources */,
+				0AB63F8C1F53926200E2F76C /* EHarmonicEquivalent.swift in Sources */,
+				0AB63F7B1F53925B00E2F76C /* MinorChord.swift in Sources */,
+				0AB63F791F53925B00E2F76C /* Chord.swift in Sources */,
+				0AB63F951F53926D00E2F76C /* IonianMode.swift in Sources */,
+				0AB63F7F1F53925B00E2F76C /* HalfDiminishedSeventhChord.swift in Sources */,
+				0AB63F7E1F53925B00E2F76C /* DominantSeventhChord.swift in Sources */,
+				0AB63F7A1F53925B00E2F76C /* MajorChord.swift in Sources */,
+				0AB63F8A1F53926200E2F76C /* Note.swift in Sources */,
+				0AB63F701F53925400E2F76C /* DiatonicHarmony.swift in Sources */,
+				0AB63F7D1F53925B00E2F76C /* MinorSeventhChord.swift in Sources */,
+				0AB63F7C1F53925B00E2F76C /* MajorSeventhChord.swift in Sources */,
+				0AB63F911F53926800E2F76C /* Scale.swift in Sources */,
+				0AB63F8B1F53926200E2F76C /* ChromaticScale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1586,6 +1670,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65101E60192300AF060B /* tvOS-Application.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1606,6 +1691,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65101E60192300AF060B /* tvOS-Application.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1625,6 +1711,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65091E60192300AF060B /* Mac-Application.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1647,6 +1734,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65091E60192300AF060B /* Mac-Application.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
