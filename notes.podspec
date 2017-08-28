@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
  s.homepage = 'https://github.com/thiagolioy/Notes'
  s.social_media_url = 'https://twitter.com/tplioy'
  s.authors = { "Thiago Lioy" => "thiagolioy@gmail.com" }
- s.source = { :git => "https://github.com/com.tplioy/Notes.git", :tag => "v"+s.version.to_s }
+ s.source = { :git => "https://github.com/thiagolioy/Notes.git", :tag => "v"+s.version.to_s }
  s.platforms     = { :ios => "8.0", :osx => "10.10", :tvos => "9.0", :watchos => "2.0" }
  s.requires_arc = true
 
