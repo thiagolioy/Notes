@@ -37,11 +37,6 @@
                BlueprintName = "NotesTests-iOS"
                ReferencedContainer = "container:Notes.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "HalfDiminishedSeventhChordSpec">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

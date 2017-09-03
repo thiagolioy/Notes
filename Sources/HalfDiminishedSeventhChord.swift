@@ -21,7 +21,7 @@ public struct HalfDiminishedSeventhChord: Chord {
     
     public init(key: Note) {
         self.key = key
-        motherScale = IonianMode(key: key)
+        motherScale = LocrianMode(key: key)
     }
     
     public func chordTones() -> [Note] {
@@ -30,6 +30,7 @@ public struct HalfDiminishedSeventhChord: Chord {
             notes[0],
             notes[2],
             notes[4],
+            notes[6],
         ]
     }
 }

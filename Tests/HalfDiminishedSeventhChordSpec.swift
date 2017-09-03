@@ -45,15 +45,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("Cm7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
                         Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .E, intonation: .flat),
+                        Note(name: .G, intonation: .flat),
+                        Note(name: .B, intonation: .flat)
                         ]))
                 }
             }
@@ -66,15 +67,38 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("C♯m7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
+                        Note(name: .C, intonation: .sharp),
                         Note(name: .E, intonation: .natural),
                         Note(name: .G, intonation: .natural),
+                        Note(name: .B, intonation: .natural)
+                        ]))
+                }
+            }
+            
+            context("in the key of D flat") {
+                var rootChord: HalfDiminishedSeventhChord!
+                beforeEach {
+                    let key = Note(name: .D, intonation: .flat)
+                    rootChord = HalfDiminishedSeventhChord(key: key)
+                }
+                
+                it("should have the expected full name") {
+                    expect(rootChord.fullName()).to(equal("D♭m7b5"))
+                }
+                
+                it("should have the expected chord tones") {
+                    let notes = rootChord.chordTones()
+                    expect(notes).to(equal([
+                        Note(name: .D, intonation: .flat),
+                        Note(name: .F, intonation: .flat),
+                        Note(name: .A, intonation: .doubleFlat),
+                        Note(name: .C, intonation: .flat)
                         ]))
                 }
             }
@@ -87,15 +111,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("D"))
+                    expect(rootChord.fullName()).to(equal("Dm7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .D, intonation: .natural),
+                        Note(name: .F, intonation: .natural),
+                        Note(name: .A, intonation: .flat),
+                        Note(name: .C, intonation: .natural)
                         ]))
                 }
             }
@@ -103,20 +128,43 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
             context("in the key of D sharp") {
                 var rootChord: HalfDiminishedSeventhChord!
                 beforeEach {
-                    let key = Note(name: .D, intonation: .natural)
+                    let key = Note(name: .D, intonation: .sharp)
                     rootChord = HalfDiminishedSeventhChord(key: key)
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("D"))
+                    expect(rootChord.fullName()).to(equal("D♯m7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .D, intonation: .sharp),
+                        Note(name: .F, intonation: .sharp),
+                        Note(name: .A, intonation: .natural),
+                        Note(name: .C, intonation: .sharp)
+                        ]))
+                }
+            }
+            
+            context("in the key of E flat") {
+                var rootChord: HalfDiminishedSeventhChord!
+                beforeEach {
+                    let key = Note(name: .E, intonation: .flat)
+                    rootChord = HalfDiminishedSeventhChord(key: key)
+                }
+                
+                it("should have the expected full name") {
+                    expect(rootChord.fullName()).to(equal("E♭m7b5"))
+                }
+                
+                it("should have the expected chord tones") {
+                    let notes = rootChord.chordTones()
+                    expect(notes).to(equal([
+                        Note(name: .E, intonation: .flat),
+                        Note(name: .G, intonation: .flat),
+                        Note(name: .B, intonation: .doubleFlat),
+                        Note(name: .D, intonation: .flat)
                         ]))
                 }
             }
@@ -129,15 +177,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("Em7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
                         Note(name: .E, intonation: .natural),
                         Note(name: .G, intonation: .natural),
+                        Note(name: .B, intonation: .flat),
+                        Note(name: .D, intonation: .natural)
                         ]))
                 }
             }
@@ -150,15 +199,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("Fm7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .F, intonation: .natural),
+                        Note(name: .A, intonation: .flat),
+                        Note(name: .C, intonation: .flat),
+                        Note(name: .E, intonation: .flat)
                         ]))
                 }
             }
@@ -171,15 +221,38 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("F♯m7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
+                        Note(name: .F, intonation: .sharp),
+                        Note(name: .A, intonation: .natural),
                         Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .E, intonation: .natural)
+                        ]))
+                }
+            }
+            
+            context("in the key of G flat") {
+                var rootChord: HalfDiminishedSeventhChord!
+                beforeEach {
+                    let key = Note(name: .G, intonation: .flat)
+                    rootChord = HalfDiminishedSeventhChord(key: key)
+                }
+                
+                it("should have the expected full name") {
+                    expect(rootChord.fullName()).to(equal("G♭m7b5"))
+                }
+                
+                it("should have the expected chord tones") {
+                    let notes = rootChord.chordTones()
+                    expect(notes).to(equal([
+                        Note(name: .G, intonation: .flat),
+                        Note(name: .B, intonation: .doubleFlat),
+                        Note(name: .D, intonation: .doubleFlat),
+                        Note(name: .F, intonation: .flat)
                         ]))
                 }
             }
@@ -192,15 +265,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("Gm7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
                         Note(name: .G, intonation: .natural),
+                        Note(name: .B, intonation: .flat),
+                        Note(name: .D, intonation: .flat),
+                        Note(name: .F, intonation: .natural)
                         ]))
                 }
             }
@@ -213,15 +287,38 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("G♯m7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .G, intonation: .sharp),
+                        Note(name: .B, intonation: .natural),
+                        Note(name: .D, intonation: .natural),
+                        Note(name: .F, intonation: .sharp)
+                        ]))
+                }
+            }
+            
+            context("in the key of A flat") {
+                var rootChord: HalfDiminishedSeventhChord!
+                beforeEach {
+                    let key = Note(name: .A, intonation: .flat)
+                    rootChord = HalfDiminishedSeventhChord(key: key)
+                }
+                
+                it("should have the expected full name") {
+                    expect(rootChord.fullName()).to(equal("A♭m7b5"))
+                }
+                
+                it("should have the expected chord tones") {
+                    let notes = rootChord.chordTones()
+                    expect(notes).to(equal([
+                        Note(name: .A, intonation: .flat),
+                        Note(name: .C, intonation: .flat),
+                        Note(name: .E, intonation: .doubleFlat),
+                        Note(name: .G, intonation: .flat)
                         ]))
                 }
             }
@@ -234,15 +331,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("Am7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
+                        Note(name: .A, intonation: .natural),
                         Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .E, intonation: .flat),
+                        Note(name: .G, intonation: .natural)
                         ]))
                 }
             }
@@ -255,15 +353,38 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("A♯m7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
+                        Note(name: .A, intonation: .sharp),
+                        Note(name: .C, intonation: .sharp),
                         Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .G, intonation: .sharp)
+                        ]))
+                }
+            }
+            
+            context("in the key of B flat") {
+                var rootChord: HalfDiminishedSeventhChord!
+                beforeEach {
+                    let key = Note(name: .B, intonation: .flat)
+                    rootChord = HalfDiminishedSeventhChord(key: key)
+                }
+                
+                it("should have the expected full name") {
+                    expect(rootChord.fullName()).to(equal("B♭m7b5"))
+                }
+                
+                it("should have the expected chord tones") {
+                    let notes = rootChord.chordTones()
+                    expect(notes).to(equal([
+                        Note(name: .B, intonation: .flat),
+                        Note(name: .D, intonation: .flat),
+                        Note(name: .F, intonation: .flat),
+                        Note(name: .A, intonation: .flat)
                         ]))
                 }
             }
@@ -276,15 +397,16 @@ class HalfDiminishedSeventhChordSpec: QuickSpec {
                 }
                 
                 it("should have the expected full name") {
-                    expect(rootChord.fullName()).to(equal("C"))
+                    expect(rootChord.fullName()).to(equal("Bm7b5"))
                 }
                 
                 it("should have the expected chord tones") {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
-                        Note(name: .C, intonation: .natural),
-                        Note(name: .E, intonation: .natural),
-                        Note(name: .G, intonation: .natural),
+                        Note(name: .B, intonation: .natural),
+                        Note(name: .D, intonation: .natural),
+                        Note(name: .F, intonation: .natural),
+                        Note(name: .A, intonation: .natural)
                         ]))
                 }
             }
