@@ -67,7 +67,7 @@ extension Note: Hashable {
    
     public static func ==(lhs: Note, rhs: Note) -> Bool{
         return lhs.name == rhs.name &&
-                lhs.intonation == rhs.intonation
+            lhs.intonation == rhs.intonation
     }
 }
 
@@ -85,14 +85,7 @@ extension Note {
 }
 
 extension Note {
-//    public func add(intervals: [Note.Interval]) -> Note{
-//        var key: Note = self
-//        intervals.forEach{
-//            key = ChromaticScale.add(interval: $0, to: key)
-//        }
-//        return key
-//    }
-//    
+
     public func add(interval: Note.Interval) -> Note{
         return ChromaticScale.add(interval: interval, to: self)
     }

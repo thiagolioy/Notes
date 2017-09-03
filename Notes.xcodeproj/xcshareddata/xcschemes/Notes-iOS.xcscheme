@@ -44,15 +44,6 @@
                <Test
                   Identifier = "HalfDiminishedSeventhChordSpec">
                </Test>
-               <Test
-                  Identifier = "MajorSeventhChordSpec">
-               </Test>
-               <Test
-                  Identifier = "MinorSeventhChordSpec">
-               </Test>
-               <Test
-                  Identifier = "NotesSpec">
-               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>

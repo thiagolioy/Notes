@@ -30,6 +30,7 @@ public struct MajorSeventhChord: Chord {
             notes[0],
             notes[2],
             notes[4],
+            notes[6]
         ]
     }
 }

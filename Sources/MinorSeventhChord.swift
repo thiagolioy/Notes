@@ -21,7 +21,7 @@ public struct MinorSeventhChord: Chord {
     
     public init(key: Note) {
         self.key = key
-        motherScale = IonianMode(key: key)
+        motherScale = AeolianMode(key: key)
     }
     
     public func chordTones() -> [Note] {
@@ -30,6 +30,7 @@ public struct MinorSeventhChord: Chord {
             notes[0],
             notes[2],
             notes[4],
+            notes[6]
         ]
     }
 }
