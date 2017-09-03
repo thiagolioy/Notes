@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'Notes'
- s.version = '0.0.1'
+ s.version = '0.0.2'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'Notes is aa music theory framework.'
  s.homepage = 'https://github.com/thiagolioy/Notes'
