@@ -21,7 +21,7 @@ public struct DominantSeventhChord: Chord {
     
     public init(key: Note) {
         self.key = key
-        motherScale = IonianMode(key: key)
+        motherScale = MixolydianMode(key: key)
     }
     
     public func chordTones() -> [Note] {
@@ -30,6 +30,7 @@ public struct DominantSeventhChord: Chord {
             notes[0],
             notes[2],
             notes[4],
+            notes[6],
         ]
     }
 }

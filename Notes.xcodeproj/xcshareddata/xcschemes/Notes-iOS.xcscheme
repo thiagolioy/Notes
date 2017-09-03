@@ -39,9 +39,6 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "DominantSeventhChordSpec">
-               </Test>
-               <Test
                   Identifier = "HalfDiminishedSeventhChordSpec">
                </Test>
             </SkippedTests>

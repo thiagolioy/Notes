@@ -109,6 +109,13 @@
 		99B0B8EF1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */; };
 		99B0B8F01F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */; };
 		99B0B8F11F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */; };
+		99B0B8F31F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */; };
+		99B0B8F41F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */; };
+		99B0B8F51F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */; };
+		99B0B8F61F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */; };
+		99B0B8F81F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */; };
+		99B0B8F91F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */; };
+		99B0B8FA1F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -368,6 +375,8 @@
 		35CD65171E60192300AF060B /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		35CD65181E60192300AF060B /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorDiatonicHarmonySpec.swift; sourceTree = "<group>"; };
+		99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixolydianMode.swift; sourceTree = "<group>"; };
+		99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixolydianModeSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +455,7 @@
 			children = (
 				0A3493FD1F51D4A3000E23DA /* IonianMode.swift */,
 				0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */,
+				99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */,
 			);
 			name = Modes;
 			sourceTree = "<group>";
@@ -455,6 +465,7 @@
 			children = (
 				0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */,
 				0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */,
+				99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */,
 			);
 			name = Scales;
 			sourceTree = "<group>";
@@ -1182,6 +1193,7 @@
 				0A2C52901F538144004BD4E7 /* HalfDiminishedSeventhChord.swift in Sources */,
 				0A3493FB1F51D2EB000E23DA /* Scale.swift in Sources */,
 				0A3493F71F51C8FB000E23DA /* ChromaticScale.swift in Sources */,
+				99B0B8F31F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,6 +1215,7 @@
 				0AB63F831F53925C00E2F76C /* MajorSeventhChord.swift in Sources */,
 				0AB63F921F53926800E2F76C /* Scale.swift in Sources */,
 				0AB63F8E1F53926300E2F76C /* ChromaticScale.swift in Sources */,
+				99B0B8F61F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1224,6 +1237,7 @@
 				0AB63F751F53925A00E2F76C /* MajorSeventhChord.swift in Sources */,
 				0AB63F901F53926700E2F76C /* Scale.swift in Sources */,
 				0AB63F881F53926100E2F76C /* ChromaticScale.swift in Sources */,
+				99B0B8F41F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,6 +1259,7 @@
 				0AB63F7C1F53925B00E2F76C /* MajorSeventhChord.swift in Sources */,
 				0AB63F911F53926800E2F76C /* Scale.swift in Sources */,
 				0AB63F8B1F53926200E2F76C /* ChromaticScale.swift in Sources */,
+				99B0B8F51F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1261,6 +1276,7 @@
 				0A2C52981F538456004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
 				0A2C52A91F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */,
 				99B0B8EF1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */,
+				99B0B8F81F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */,
 				0A3494161F51FE81000E23DA /* MinorChordSpec.swift in Sources */,
 				0A2C52951F53844F004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
@@ -1279,6 +1295,7 @@
 				0A2C529A1F538458004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
 				0A2C52AB1F538BAD004BD4E7 /* AeolianModeSpec.swift in Sources */,
 				99B0B8F11F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */,
+				99B0B8FA1F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */,
 				0A3494181F51FE83000E23DA /* MinorChordSpec.swift in Sources */,
 				0A2C52971F538451004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
@@ -1297,6 +1314,7 @@
 				0A2C52991F538457004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
 				0A2C52AA1F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */,
 				99B0B8F01F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */,
+				99B0B8F91F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */,
 				0A3494171F51FE82000E23DA /* MinorChordSpec.swift in Sources */,
 				0A2C52961F538450004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
