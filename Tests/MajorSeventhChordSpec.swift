@@ -142,7 +142,7 @@ class MajorSeventhChordSpec: QuickSpec {
                         Note(name: .D, intonation: .sharp),
                         Note(name: .F, intonation: .doubleSharp),
                         Note(name: .A, intonation: .sharp),
-                        Note(name: .E, intonation: .doubleFlat)
+                        Note(name: .C, intonation: .doubleSharp)
                         ]))
                 }
             }
@@ -360,9 +360,9 @@ class MajorSeventhChordSpec: QuickSpec {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
                         Note(name: .A, intonation: .sharp),
-                        Note(name: .E, intonation: .doubleFlat),
-                        Note(name: .F, intonation: .natural),
-                        Note(name: .A, intonation: .natural)
+                        Note(name: .C, intonation: .doubleSharp),
+                        Note(name: .E, intonation: .sharp),
+                        Note(name: .G, intonation: .doubleSharp)
                         ]))
                 }
             }

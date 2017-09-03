@@ -73,12 +73,12 @@ extension Note: Hashable {
 
 extension Note {
     
-    public func eharmonicEquivalent() -> Note?{
+    public func eharmonicEquivalent() -> EHarmonicNote? { 
         return EHarmonicEquivalent.equivalent(of: self)
     }
     
-    public func equivalent(to note:Note) -> Bool{
-        return eharmonicEquivalent() == note
+    public func equivalent(to note: Note) -> Bool{
+        return eharmonicEquivalent()?.contains(note: note) ?? false
     
     }
    

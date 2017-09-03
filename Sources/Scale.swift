@@ -29,7 +29,9 @@ public extension Scale {
             
             if nextNote.name != nextNoteName {
                 if let equivalentNote = nextNote.eharmonicEquivalent() {
-                    nextNote = equivalentNote
+                    if let eharmonic = equivalentNote.eHarmonic(with: nextNoteName) {
+                        nextNote = eharmonic
+                    }
                 }
             }
             notes.append(nextNote)

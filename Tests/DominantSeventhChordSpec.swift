@@ -360,9 +360,9 @@ class DominantSeventhChordSpec: QuickSpec {
                     let notes = rootChord.chordTones()
                     expect(notes).to(equal([
                         Note(name: .A, intonation: .sharp),
-                        Note(name: .E, intonation: .doubleFlat),
-                        Note(name: .F, intonation: .natural),
-                        Note(name: .A, intonation: .flat)
+                        Note(name: .C, intonation: .doubleSharp),
+                        Note(name: .E, intonation: .sharp),
+                        Note(name: .G, intonation: .sharp)
                         ]))
                 }
             }

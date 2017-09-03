@@ -116,6 +116,17 @@
 		99B0B8F81F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */; };
 		99B0B8F91F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */; };
 		99B0B8FA1F5BACEF00FE0BB1 /* MixolydianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */; };
+		99B0B8FC1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8FB1F5BB02500FE0BB1 /* LocrianMode.swift */; };
+		99B0B8FD1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8FB1F5BB02500FE0BB1 /* LocrianMode.swift */; };
+		99B0B8FE1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8FB1F5BB02500FE0BB1 /* LocrianMode.swift */; };
+		99B0B8FF1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8FB1F5BB02500FE0BB1 /* LocrianMode.swift */; };
+		99B0B9011F5BB0C600FE0BB1 /* LocrianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9001F5BB0C500FE0BB1 /* LocrianModeSpec.swift */; };
+		99B0B9021F5BB0C600FE0BB1 /* LocrianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9001F5BB0C500FE0BB1 /* LocrianModeSpec.swift */; };
+		99B0B9031F5BB0C600FE0BB1 /* LocrianModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9001F5BB0C500FE0BB1 /* LocrianModeSpec.swift */; };
+		99B0B9051F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9041F5BBD5B00FE0BB1 /* CircleOfFifths.swift */; };
+		99B0B9061F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9041F5BBD5B00FE0BB1 /* CircleOfFifths.swift */; };
+		99B0B9071F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9041F5BBD5B00FE0BB1 /* CircleOfFifths.swift */; };
+		99B0B9081F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B9041F5BBD5B00FE0BB1 /* CircleOfFifths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -377,6 +388,9 @@
 		99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorDiatonicHarmonySpec.swift; sourceTree = "<group>"; };
 		99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixolydianMode.swift; sourceTree = "<group>"; };
 		99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixolydianModeSpec.swift; sourceTree = "<group>"; };
+		99B0B8FB1F5BB02500FE0BB1 /* LocrianMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocrianMode.swift; sourceTree = "<group>"; };
+		99B0B9001F5BB0C500FE0BB1 /* LocrianModeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocrianModeSpec.swift; sourceTree = "<group>"; };
+		99B0B9041F5BBD5B00FE0BB1 /* CircleOfFifths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleOfFifths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +470,7 @@
 				0A3493FD1F51D4A3000E23DA /* IonianMode.swift */,
 				0A2C52A51F5388FF004BD4E7 /* AeolianMode.swift */,
 				99B0B8F21F5BAC9000FE0BB1 /* MixolydianMode.swift */,
+				99B0B8FB1F5BB02500FE0BB1 /* LocrianMode.swift */,
 			);
 			name = Modes;
 			sourceTree = "<group>";
@@ -466,6 +481,7 @@
 				0A3494011F51D6D9000E23DA /* IonianModeSpec.swift */,
 				0A2C52A71F538BA6004BD4E7 /* AeolianModeSpec.swift */,
 				99B0B8F71F5BACEF00FE0BB1 /* MixolydianModeSpec.swift */,
+				99B0B9001F5BB0C500FE0BB1 /* LocrianModeSpec.swift */,
 			);
 			name = Scales;
 			sourceTree = "<group>";
@@ -742,6 +758,7 @@
 		99B0B8DE1F5AFE3E00FE0BB1 /* CircleOfFifths */ = {
 			isa = PBXGroup;
 			children = (
+				99B0B9041F5BBD5B00FE0BB1 /* CircleOfFifths.swift */,
 			);
 			name = CircleOfFifths;
 			sourceTree = "<group>";
@@ -1188,9 +1205,11 @@
 				0A34941B1F51FF3A000E23DA /* DiatonicHarmony.swift in Sources */,
 				0A2C528E1F537FD7004BD4E7 /* DominantSeventhChord.swift in Sources */,
 				0A3493E81F51C3CA000E23DA /* Note.swift in Sources */,
+				99B0B8FC1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */,
 				0A3493F91F51CAAC000E23DA /* EHarmonicEquivalent.swift in Sources */,
 				0A2C528C1F537FAE004BD4E7 /* MinorSeventhChord.swift in Sources */,
 				0A2C52901F538144004BD4E7 /* HalfDiminishedSeventhChord.swift in Sources */,
+				99B0B9051F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */,
 				0A3493FB1F51D2EB000E23DA /* Scale.swift in Sources */,
 				0A3493F71F51C8FB000E23DA /* ChromaticScale.swift in Sources */,
 				99B0B8F31F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
@@ -1210,9 +1229,11 @@
 				0AB63F851F53925C00E2F76C /* DominantSeventhChord.swift in Sources */,
 				0AB63F811F53925C00E2F76C /* MajorChord.swift in Sources */,
 				0AB63F8D1F53926300E2F76C /* Note.swift in Sources */,
+				99B0B8FF1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */,
 				0AB63F711F53925500E2F76C /* DiatonicHarmony.swift in Sources */,
 				0AB63F841F53925C00E2F76C /* MinorSeventhChord.swift in Sources */,
 				0AB63F831F53925C00E2F76C /* MajorSeventhChord.swift in Sources */,
+				99B0B9081F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */,
 				0AB63F921F53926800E2F76C /* Scale.swift in Sources */,
 				0AB63F8E1F53926300E2F76C /* ChromaticScale.swift in Sources */,
 				99B0B8F61F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
@@ -1232,9 +1253,11 @@
 				0AB63F771F53925A00E2F76C /* DominantSeventhChord.swift in Sources */,
 				0AB63F731F53925A00E2F76C /* MajorChord.swift in Sources */,
 				0AB63F871F53926100E2F76C /* Note.swift in Sources */,
+				99B0B8FD1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */,
 				0AB63F621F53925300E2F76C /* DiatonicHarmony.swift in Sources */,
 				0AB63F761F53925A00E2F76C /* MinorSeventhChord.swift in Sources */,
 				0AB63F751F53925A00E2F76C /* MajorSeventhChord.swift in Sources */,
+				99B0B9061F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */,
 				0AB63F901F53926700E2F76C /* Scale.swift in Sources */,
 				0AB63F881F53926100E2F76C /* ChromaticScale.swift in Sources */,
 				99B0B8F41F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
@@ -1254,9 +1277,11 @@
 				0AB63F7E1F53925B00E2F76C /* DominantSeventhChord.swift in Sources */,
 				0AB63F7A1F53925B00E2F76C /* MajorChord.swift in Sources */,
 				0AB63F8A1F53926200E2F76C /* Note.swift in Sources */,
+				99B0B8FE1F5BB02500FE0BB1 /* LocrianMode.swift in Sources */,
 				0AB63F701F53925400E2F76C /* DiatonicHarmony.swift in Sources */,
 				0AB63F7D1F53925B00E2F76C /* MinorSeventhChord.swift in Sources */,
 				0AB63F7C1F53925B00E2F76C /* MajorSeventhChord.swift in Sources */,
+				99B0B9071F5BBD5B00FE0BB1 /* CircleOfFifths.swift in Sources */,
 				0AB63F911F53926800E2F76C /* Scale.swift in Sources */,
 				0AB63F8B1F53926200E2F76C /* ChromaticScale.swift in Sources */,
 				99B0B8F51F5BAC9000FE0BB1 /* MixolydianMode.swift in Sources */,
@@ -1271,6 +1296,7 @@
 				3549BB8B1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
 				0A2C52A21F538621004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494031F51D7DD000E23DA /* IonianModeSpec.swift in Sources */,
+				99B0B9011F5BB0C600FE0BB1 /* LocrianModeSpec.swift in Sources */,
 				0A2C529D1F538506004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
 				0A34941F1F5204E1000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */,
 				0A2C52981F538456004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
@@ -1290,6 +1316,7 @@
 				3549BB8D1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
 				0A2C52A41F538623004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494051F51D7DF000E23DA /* IonianModeSpec.swift in Sources */,
+				99B0B9031F5BB0C600FE0BB1 /* LocrianModeSpec.swift in Sources */,
 				0A2C529F1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
 				0A3494211F5204E3000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */,
 				0A2C529A1F538458004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
@@ -1309,6 +1336,7 @@
 				3549BB8C1DA38C0A00C63030 /* NotesSpec.swift in Sources */,
 				0A2C52A31F538622004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494041F51D7DE000E23DA /* IonianModeSpec.swift in Sources */,
+				99B0B9021F5BB0C600FE0BB1 /* LocrianModeSpec.swift in Sources */,
 				0A2C529E1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
 				0A3494201F5204E2000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */,
 				0A2C52991F538457004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
