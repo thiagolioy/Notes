@@ -16,5 +16,11 @@ public struct AeolianMode: Scale {
     public let intervals: [Note.Interval] = [
         .wholestep,.halfstep,.wholestep,.wholestep,.halfstep,.wholestep,.wholestep
     ]
+    
+    public let key: Note
+    
+    public init(key: Note) {
+        self.key = key
+    }
 
 }

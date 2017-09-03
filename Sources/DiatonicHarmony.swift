@@ -15,8 +15,8 @@ public enum DiatonicHarmony {
     func chords(inKey key: Note) -> [Chord] {
         switch self {
         case .major:
-            let mode = IonianMode()
-            let notes = mode.scaleNotes(inKey: key)
+            let mode = IonianMode(key: key)
+            let notes = mode.scaleNotes()
             let chordTypes: [Chord.Type] = [
                 MajorSeventhChord.self,
                 MinorSeventhChord.self,
@@ -30,8 +30,8 @@ public enum DiatonicHarmony {
             return chords(from: notes, with: chordTypes)
             
         case .minor:
-            let mode = AeolianMode()
-            let notes = mode.scaleNotes(inKey: key)
+            let mode = AeolianMode(key: key)
+            let notes = mode.scaleNotes()
             let chordTypes: [Chord.Type] = [
                 MinorSeventhChord.self,
                 HalfDiminishedSeventhChord.self,
@@ -49,10 +49,7 @@ public enum DiatonicHarmony {
     private func chords(from notes: [Note], with types: [Chord.Type]) -> [Chord] {
         var chords: [Chord] = []
         for (index, chordType) in types.enumerated() {
-            var note = notes[index]
-            if note.intonation == .sharp{
-                note = note.eharmonicEquivalent()!
-            }
+            let note = notes[index]
             let chord: Chord = chordType.init(key: note)
             chords.append(chord)
         }

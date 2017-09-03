@@ -16,4 +16,10 @@ public struct IonianMode: Scale {
     public let intervals: [Note.Interval] = [
         .wholestep,.wholestep,.halfstep,.wholestep,.wholestep,.wholestep,.halfstep
     ]
+    
+    public let key: Note
+    
+    public init(key: Note) {
+        self.key = key
+    }
 }

@@ -12,12 +12,33 @@ public struct Note {
     
     public enum Name: String {
         case A,B,C,D,E,F,G
+        
+        func next() -> Name {
+            switch self {
+            case .A:
+                return .B
+            case .B:
+                return .C
+            case .C:
+                return .D
+            case .D:
+                return .E
+            case .E:
+                return .F
+            case .F:
+                return .G
+            case .G:
+                return .A
+            }
+        }
     }
     
     public enum Intonation: String {
+        case doubleFlat = "♭♭"
         case flat = "♭"
         case natural = ""
         case sharp = "♯"
+        case doubleSharp = "𝄪"
     }
     
     public enum Interval: Int {
@@ -64,6 +85,14 @@ extension Note {
 }
 
 extension Note {
+//    public func add(intervals: [Note.Interval]) -> Note{
+//        var key: Note = self
+//        intervals.forEach{
+//            key = ChromaticScale.add(interval: $0, to: key)
+//        }
+//        return key
+//    }
+//    
     public func add(interval: Note.Interval) -> Note{
         return ChromaticScale.add(interval: interval, to: self)
     }

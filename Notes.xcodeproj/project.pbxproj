@@ -45,9 +45,9 @@
 		0A3494171F51FE82000E23DA /* MinorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494141F51FE73000E23DA /* MinorChordSpec.swift */; };
 		0A3494181F51FE83000E23DA /* MinorChordSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3494141F51FE73000E23DA /* MinorChordSpec.swift */; };
 		0A34941B1F51FF3A000E23DA /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
-		0A34941F1F5204E1000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
-		0A3494201F5204E2000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
-		0A3494211F5204E3000E23DA /* DiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */; };
+		0A34941F1F5204E1000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* MajorDiatonicHarmonySpec.swift */; };
+		0A3494201F5204E2000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* MajorDiatonicHarmonySpec.swift */; };
+		0A3494211F5204E3000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941D1F5204C4000E23DA /* MajorDiatonicHarmonySpec.swift */; };
 		0AB63F621F53925300E2F76C /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
 		0AB63F701F53925400E2F76C /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
 		0AB63F711F53925500E2F76C /* DiatonicHarmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */; };
@@ -106,6 +106,9 @@
 		35CA2AC91E12927100147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2AAB1E12920400147290 /* Quick.framework */; };
 		35CA2AD21E12928C00147290 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A9B1E12920400147290 /* Nimble.framework */; };
 		35CA2AD31E12928C00147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2ABB1E12920400147290 /* Quick.framework */; };
+		99B0B8EF1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */; };
+		99B0B8F01F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */; };
+		99B0B8F11F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,7 +326,7 @@
 		0A3494121F51FE36000E23DA /* MinorChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorChord.swift; sourceTree = "<group>"; };
 		0A3494141F51FE73000E23DA /* MinorChordSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorChordSpec.swift; sourceTree = "<group>"; };
 		0A34941A1F51FF3A000E23DA /* DiatonicHarmony.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiatonicHarmony.swift; sourceTree = "<group>"; };
-		0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiatonicHarmonySpec.swift; sourceTree = "<group>"; };
+		0A34941D1F5204C4000E23DA /* MajorDiatonicHarmonySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorDiatonicHarmonySpec.swift; sourceTree = "<group>"; };
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -364,6 +367,7 @@
 		35CD65161E60192300AF060B /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
 		35CD65171E60192300AF060B /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		35CD65181E60192300AF060B /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorDiatonicHarmonySpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,7 +507,8 @@
 		0A34941C1F5204B9000E23DA /* Harmony */ = {
 			isa = PBXGroup;
 			children = (
-				0A34941D1F5204C4000E23DA /* DiatonicHarmonySpec.swift */,
+				0A34941D1F5204C4000E23DA /* MajorDiatonicHarmonySpec.swift */,
+				99B0B8EE1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift */,
 			);
 			name = Harmony;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 		3549BB5C1DA38AA500C63030 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				99B0B8DE1F5AFE3E00FE0BB1 /* CircleOfFifths */,
 				0A3494191F51FF2F000E23DA /* Harmony */,
 				0A3494071F51F63A000E23DA /* Chords */,
 				0A3494061F51F629000E23DA /* Core */,
@@ -720,6 +726,13 @@
 				35CD65181E60192300AF060B /* watchOS-StaticLibrary.xcconfig */,
 			);
 			path = watchOS;
+			sourceTree = "<group>";
+		};
+		99B0B8DE1F5AFE3E00FE0BB1 /* CircleOfFifths */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CircleOfFifths;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1244,9 +1257,10 @@
 				0A2C52A21F538621004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494031F51D7DD000E23DA /* IonianModeSpec.swift in Sources */,
 				0A2C529D1F538506004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
-				0A34941F1F5204E1000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A34941F1F5204E1000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */,
 				0A2C52981F538456004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
 				0A2C52A91F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */,
+				99B0B8EF1F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */,
 				0A3494161F51FE81000E23DA /* MinorChordSpec.swift in Sources */,
 				0A2C52951F53844F004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
@@ -1261,9 +1275,10 @@
 				0A2C52A41F538623004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494051F51D7DF000E23DA /* IonianModeSpec.swift in Sources */,
 				0A2C529F1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
-				0A3494211F5204E3000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A3494211F5204E3000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */,
 				0A2C529A1F538458004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
 				0A2C52AB1F538BAD004BD4E7 /* AeolianModeSpec.swift in Sources */,
+				99B0B8F11F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */,
 				0A3494181F51FE83000E23DA /* MinorChordSpec.swift in Sources */,
 				0A2C52971F538451004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);
@@ -1278,9 +1293,10 @@
 				0A2C52A31F538622004BD4E7 /* HalfDiminishedSeventhChordSpec.swift in Sources */,
 				0A3494041F51D7DE000E23DA /* IonianModeSpec.swift in Sources */,
 				0A2C529E1F538507004BD4E7 /* DominantSeventhChordSpec.swift in Sources */,
-				0A3494201F5204E2000E23DA /* DiatonicHarmonySpec.swift in Sources */,
+				0A3494201F5204E2000E23DA /* MajorDiatonicHarmonySpec.swift in Sources */,
 				0A2C52991F538457004BD4E7 /* MinorSeventhChordSpec.swift in Sources */,
 				0A2C52AA1F538BAC004BD4E7 /* AeolianModeSpec.swift in Sources */,
+				99B0B8F01F5B8E7F00FE0BB1 /* MinorDiatonicHarmonySpec.swift in Sources */,
 				0A3494171F51FE82000E23DA /* MinorChordSpec.swift in Sources */,
 				0A2C52961F538450004BD4E7 /* MajorSeventhChordSpec.swift in Sources */,
 			);

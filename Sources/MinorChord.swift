@@ -11,6 +11,7 @@ import Foundation
 public struct MinorChord: Chord {
     public let symbol = "m"
     public let key: Note
+    public let motherScale: Scale
     public let chordIntervals: [ChordIntervals] = [
         .root,
         .minorThird,
@@ -19,5 +20,15 @@ public struct MinorChord: Chord {
     
     public init(key: Note) {
         self.key = key
+        motherScale = AeolianMode(key: key)
+    }
+    
+    public func chordTones() -> [Note] {
+        let notes = motherScale.scaleNotes()
+        return [
+            notes[0],
+            notes[2],
+            notes[4],
+        ]
     }
 }

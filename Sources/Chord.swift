@@ -59,8 +59,10 @@ public protocol Chord {
     var symbol: String {get}
     var key: Note {get}
     var chordIntervals: [ChordIntervals] {get}
+    var motherScale: Scale {get}
     
     init(key: Note) 
+    
     
     func fullName() -> String
     func chordTones() -> [Note]
@@ -72,18 +74,4 @@ extension Chord {
         return key.fullname() + symbol
     }
     
-    public func chordTones() -> [Note] {
-        var tones: [Note] = []
-        for chordInterval in chordIntervals {
-            var mutableKey = key
-            chordInterval.intervals().forEach { interval in
-                mutableKey = mutableKey.add(interval: interval)
-            }
-            if mutableKey.intonation == .sharp{
-                mutableKey = mutableKey.eharmonicEquivalent()!
-            }
-            tones.append(mutableKey)
-        }
-        return tones
-    }
 }

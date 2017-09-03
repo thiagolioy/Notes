@@ -11,21 +11,30 @@ import Foundation
 public protocol Scale {
     var names: [String] {get}
     var intervals: [Note.Interval] {get}
+    var key: Note {get}
     
-    func scaleNotes(inKey key: Note) -> [Note]
+    init(key: Note)
+    
+    func scaleNotes() -> [Note]
 }
 
 public extension Scale {
-    public func scaleNotes(inKey key: Note) -> [Note] {
+    
+    public func scaleNotes() -> [Note] {
         var notes = [key]
         for interval in intervals {
-            let lastNote = notes.last!
-            var currentNote = lastNote.add(interval: interval)
-            if currentNote.intonation == .sharp {
-                currentNote = currentNote.eharmonicEquivalent()!
+            let note = notes.last!
+            let nextNoteName = note.name.next()
+            var nextNote = note.add(interval: interval)
+            
+            if nextNote.name != nextNoteName {
+                if let equivalentNote = nextNote.eharmonicEquivalent() {
+                    nextNote = equivalentNote
+                }
             }
-            notes.append(currentNote)
+            notes.append(nextNote)
         }
+        
         return notes
     }
 }

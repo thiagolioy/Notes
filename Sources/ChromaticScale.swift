@@ -53,6 +53,16 @@ extension ChromaticScale {
         (0..<max).forEach{ _ in result = result.previous() }
         return result
     }
+    
+//    public static func intervalDistanceBtw(note:Note, toNote secondNote:Note) -> [Note.Interval] {
+//        guard let firstIndex = index(of: note) else {
+//            return []
+//        }
+//        
+//        guard let lastIndex = index(of: secondNote) else {
+//            return []
+//        }
+//    }
 }
 
 extension ChromaticScale {
