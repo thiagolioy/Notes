@@ -41,7 +41,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Notes', '~> 0.0.1'
+pod 'Notes', '~> 0.0.2'
 ```
 
 Then, run the following command:
@@ -64,7 +64,7 @@ $ brew install carthage
 To integrate Notes into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Notes/Notes" ~> 0.0.1
+github "Notes/Notes" ~> 0.0.2
 ```
 ### Swift Package Manager
 
@@ -76,7 +76,7 @@ import PackageDescription
 let package = Package(
     name: "HelloNotes",
     dependencies: [
-        .Package(url: "https://github.com/com.tplioy/Notes.git", "0.0.1")
+        .Package(url: "https://github.com/com.tplioy/Notes.git", "0.0.2")
     ]
 )
 ```
